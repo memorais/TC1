@@ -6,7 +6,6 @@
 \usepackage{mdwlist}
 \usepackage{dsfont}
 \usepackage{graphicx}
-\usepackage{float}
 \def\Data$#1 #2 #3${#2}
 
 \autor{Matheus Eduardo B. Morais e Bruno Rubin}
@@ -35,34 +34,35 @@ Com a crescente evolução dos meios de comunicação, a necessidade de total in
 
 Apesar da mudança na necessidade dos usuários da \ingles{Web}, nenhuma alteração significativa foi feita nos protocolos e linguagens que são utilizadas hoje. Boa parte da tecnologia implementada atualmente foi criada no início dos anos 90 e apesar de sofrerem revisões periódicas, continuam não atendendo totalmente as demandas que surgem. Outro fator importante é que mesmo com o advento nas tecnologias de comunicação, nem todas as pessoas tem acesso a esta evolução. Seja por uma questão econômica ou mesmo pela falta de infraestrutura, nem toda população do planeta pode contar com aquilo que há de mais moderno.
 
-Recentemente a empresa estadunidense \ingles{Google Inc.} promoveu uma série de iniciativas em conjunto com a comunidade internacional no esforço chamado de "\ingles{Let's make the Web Faster}" \cite{WebFaster}, que consiste em um processo de reengenharia dos protocolos, linguagens e demais itens que compõem a \ingles{Web}. Dentro deste processo novos padrões e formatos estão sendo sugeridos para melhorar a performance e a qualidade na experiência do usuário com as páginas. Uma das sugestões é a utilização de um novo método para compressão de imagens chamado de \ingles{WebP}\cite{WebPConcept}. Entretanto, até o presente momento, o suporte a renderização de imagens \ingles{WebP} foi implementado apenas para os navegadores Chrome e Opera.
+Recentemente a empresa estadunidense \ingles{Google Inc.} promoveu uma série de iniciativas em conjunto com a comunidade internacional no esforço chamado de "\ingles{Let's make the Web Faster}" \cite{WebFaster}, que consiste em um processo de reengenharia dos protocolos, linguagens e demais itens que compõem a \ingles{Web}. Dentro deste processo novos padrões e formatos estão sendo sugeridos para melhorar a performance e a qualidade na experiência do usuário com as páginas. Uma das sugestões é a utilização de um novo método para compressão de imagens chamado de \ingles{WebP}. Este formato é capaz de comprimir aproximadamente 39\% mais que a melhor solução utilizada hoje (JPEG) \cite{WebPStudy}. O suporte a renderização de imagens \ingles{WebP} está implementado hoje para os navegadores Chrome e Opera. A proposta deste trabalho é a inclusão do suporte de codificação e decodificação ao \ingles{WebP} para o navegador Mozilla Firefox.
 
 \section{Motivação}
 
-\item \noindent Os estudos mais recentes mostram que a capacidade de compressão do formato \ingles{WebP} tem cerca de 39\% de ganho quando comparado com JPEG e JPEG200. A Figura 1.1 apresenta um gráfico que ilustra o ganho na porcentagem de compressão.
+\item \noindent Os estudos mais recentes mostram que a capacidade de compressão do formato \ingles{WebP} tem cerca de 39\% de ganho quando comparado com JPEG e JPEG200.
 
-\begin{figure}[H]
+\begin{figure}[h]
   \centering
     \includegraphics[width=0.9\textwidth]{Plot3_cdfcompr.png}
   \caption{Comparação do tamanho das imagens e porcentagem de compressão \protect\cite{WebPStudy}}
 \end{figure}
 
-Embora a implementação do suporte ao \ingles{WebP} esteja somente disponível para dois navegadores (Chrome e Opera), estes constituem mais de 29\% de todos os navegadores utilizados dentro da internet hoje. Se houvesse suporte ao \ingles{WebP} dentro do Mozilla Firefox este percentua aumentaria para 52\%, já que cerca de 22\% dos navegadores utilizados hoje são Mozilla Firefox \cite{BrowserStats}, como ilustra a Figura 1.2.
+Embora a implementação do suporte ao \ingles{WebP} esteja somente disponível para dois navegadores (Chrome e Opera), estes constituem mais de 29\% de todos os navegadores utilizados dentro da internet hoje. Se houvesse suporte ao \ingles{WebP} dentro do Mozilla Firefox este percentua aumentaria para 52\%, já que cerca de 22\% dos navegadores utilizados hoje são Mozilla Firefox \cite{BrowserStats}, como ilustra a Figura 2.
 
-\begin{figure}[H]
+\begin{figure}[h]
   \centering
     \includegraphics[width=0.6\textwidth]{BrowserCounter.png}
   \caption{Percentual de utilização dos Navegadores na Web \protect\cite{BrowserStats}}
 \end{figure}
 
-Embora não exista nenhuma diretiva da W3C para qual método de compressão de imagens utilizar por padrão e não se sabe se haverá tal tipo de registro neste sentido no futuro, é importante ressaltar que quanto mais navegadores suportarem a compressão usando o formato \ingles{WebP}, mais os desenvolvedores vão optar por utilizar este formato dada suas vantagens. Uma força de 52\% de suporte dentro dos navegadores da internet também fará com que aqueles que ainda não decidiram pela implementação do suporte ao novo formato, também o faça em virtude da pressão exercida pela maioria.
+Embora não exista nenhuma diretiva da W3C para qual método de compressão de imagens utilizar por padrão e não sabemos se haverá tal tipo de registro neste sentido no futuro, é importante ressaltar que quanto mais navegadores suportarem a compressão usando o formato \ingles{WebP}, mais os desenvolvedores vão optar por utilizar este formato dada suas vantagens. Uma força de 52\% de suporte dentro dos navegadores da internet também vai fazer com que aqueles que ainda não decidiram pela implementação do suporte ao novo formato, também o faça em virtude da pressão exercida pela maioria.
 
 O aumento na capacidade de compressão do formato \ingles{WebP} trará de imediato a melhora no tempo de resposta para o \ingles{download} da imagem no navegador do usuário e também diminuirá o trafego na comunicação entre cliente e servidor. É importante notar que a utilização em massa deste novo formato vai ajudar na diminuição do trafego de rede dentro da internet de uma maneira global, e isso resulta diretamente em maior vazão para outros recursos que consomem mais banda, como é o caso de um \ingles{streaming} de vídeo por exemplo.
 
 \section{Objetivo}
 
 \item \noindent
-Considerando as vantagens no uso do novo formato \ingles{WebP}, o objetivo deste trabalho é aumentar a sua disseminação dentro da \ingles{Web} através da implementação do suporte à codificação e decodificação do \ingles{WebP} para o navegador Mozilla Firefox. Os benefícios na utilização deste novo formato vão desde de aumento na performance de renderização da página até a redução do trafego de pacotes TCP dentro da internet uma vez que o formato \ingles{WebP} proporciona imagens que são consideravelmente menores do que aquelas utilizadas atualmente. 
+Com o objetivo de aumentar a disseminação do novo formato dentro da \ingles{Web}, a proposta é de habilitar o suporte dentro do Mozilla Firefox. Embora a implementação do suporte ao \ingles{WebP} esteja somente disponível para dois navegadores (Chrome e Opera), estes constituem mais de 29\% de todos os navegadores utilizados dentro da internet hoje. A implementação do suporte ao \ingles{WebP} dentro do Mozilla Firefox aumentará este percentual para 52\%, já que cerca de 22\% dos navegadores utilizados hoje são Mozilla Firefox \cite{BrowserStats}.
+
 
 \end{description}
 
@@ -73,37 +73,95 @@ Considerando as vantagens no uso do novo formato \ingles{WebP}, o objetivo deste
 \section{A World Wide Web}
 
 \item \noindent
-A internet hoje em dia se fundamenta nos princípios da \ingles{World Wide Web} ou somente \ingles{Web} como é conhecida, os usuários se conectam na rede mundial de computadores e utilizam as páginas da \ingles{Web} para realizar todo e qualquer tipo de ação dentro da rede. Desde conversar com seus amigos e familiares até realizar compras em uma página de \ingles{e-commerce}, tudo isso passa pela \ingles{Web}. A \ingles{World Wide Web} foi inventada no CERN, o Centro Europeu de Pesquisa Nuclear, com o principal objetivo de servir como suporte para a consulta e comunicação interna dos projetos de pesquisa do CERN \cite{WebStory}. A ideia era utilizar hipertextos que podiam funcionar também como hiperlinks e faziam ligações para outras páginas com mais informações. Toda plataforma desenvolvida internamente dentro do CERN para a \ingles{Web} foi mais tarde disponibilizada ao domínio público sem cobrança de royalties sob qualquer parte. Mais tarde Tim Berners-Lee, o fundador da \ingles{Web} dentro do CERN, criou a o \ingles{World Wide Web Consortium} com o principal objetivo de definir os padrões utilizados dentro da rede. Conhecido também como W3C, é composto por funcionários de diversas empresas que trabalham em período integral para manter e evoluir os padrões especificados pela organização \cite{W3Cfacts}.
+A internet hoje em dia se fundamenta nos princípios da \ingles{World Wide Web} ou somente \ingles{Web} como é conhecida. Os usuários se conectam na rede mundial de computadores e utilizam as páginas da \ingles{Web} para realizar todo e qualquer tipo de ação dentro da rede, desde conversar com seus amigos e familiares até realizar compras em uma página de \ingles{e-commerce}.
 
-Além de ser utilizada por pessoas, a \ingles{Web} também é utilizada hoje para comunicação entre sistemas. São efetivamente computadores acessando outros computadores para trocarem informações. Como os padrões definidos tem sua especificação aberta, a \ingles{Web} também se torna uma ótima ferramenta para integrar sistemas diferentes em plataformas diferentes. Hoje em dia os chamados \ingles{Web-Services} são utilizados juntamente com os conceitos de Orientação a Objetos para integração entre sistemas. A comunicação utilizando os \ingles{Web-Services} se baseiam nos princípios e padrões especificados pelo W3C para a \ingles{Web} \cite{WebServices}.
+A \ingles{World Wide Web} foi inventada no CERN (Centro Europeu de Pesquisa Nuclear), com principal objetivo de servir como suporte para a consulta e comunicação interna dos projetos de pesquisa\cite{WebStory}. A idéia inicial era utilizar hipertextos, na qual funcionariam também como hiperlinks e fariam ligações para demais páginas contendo outro tipo de informação. Toda plataforma desenvolvida internamente dentro do CERN para a \ingles{Web} foi posteriormente disponibilizada ao domínio público, sem cobrança de royalties sob qualquer parte. Mais tarde Tim Berners-Lee, o fundador da \ingles{Web} dentro do CERN, criou a o \ingles{World Wide Web Consortium} com o intuito de definir padrões de utilização e interoperabilidade entre tecnologias dentro da rede. Conhecido também como W3C, é composto por funcionários de diversas empresas que trabalham em período integral para manter e evoluir os padrões especificados pela organização \cite{W3Cfacts}.
+
+Além de ser utilizada por pessoas, a \ingles{Web} também é utilizada para comunicação entre sistemas. Efetivamente são computadores acessando outros computadores para realizarem a troca de informações, podendo ser em tempo real ou não. Como os padrões definidos tem sua especificações abertas, a \ingles{Web} também se torna uma ótima ferramenta para integrar sistemas diferentes em plataformas diferentes. Hoje em dia os chamados \ingles{Web-Services} são utilizados juntamente com os conceitos de Orientação a Objetos para integração entre sistemas. A comunicação utilizando os \ingles{Web-Services} se baseiam nos princípios e padrões especificados pelo W3C para a \ingles{Web} \cite{WebServices}.
 
 Uma parte importante da \ingles{Web} são os chamados \ingles{Web Browsers} ou Navegadores que servem para que as páginas da \ingles{Web} possam ser acessadas e operadas. Os navegadores são ferramentas que interpretam os padrões descritos pela W3C e fazem a interface para que os humanos consigam entender as informações descritas nas páginas e consigam navegar por elas de forma intuitiva, utilizando os hiperlinks.
 
-Com o advento da qualidade na comunicação da internet, as páginas da Web se tornaram cada vez mais elaboradas e interativas. Hoje não são apenas hipertextos com hiperlinks, são sistemas complexos que processam até som, imagem e vídeo. Embora estas funcionalidades dinâmicas existam, não há um padrão claro a respeito dele. A HTML que é a linguagem de programação da Web não oferece um suporte nativo para todas estas implementações e plugins adicionais não padronizados são utilizados para implementar estas necessidades específicas (o Flash Player e o Java FX são um exemplo).
+Com o advento da qualidade na comunicação da internet, as páginas da \ingles{Web} se tornaram cada vez mais elaboradas e interativas. Atualmente elas não são mais compostas apenas de hipertextos com hiperlinks, esses componentes simples deram espaço para um conjunto de maior complexidade que processam imagens, vídeos e sons. Embora estas funcionalidades dinâmicas existam, não há um padrão claro a respeito delas. A HTML, que é a linguagem de programação da Web, não oferece suporte nativo para todas estas implementações, e plugins adicionais não padronizados são utilizados para implementar estas necessidades específicas (o Flash Player e o Java FX são um exemplo).
 
-A W3C trabalha em uma evolução da linguagem HTML mais preparada para este tipo de cenário, a chamada HTML5. Dentro da HTML5 existem vários detalhes em discussão e um dos mais importantes é a questão da forma como vídeo e imagem vão ser interpretados. O valor 5 da HTML vem por essa ser a quinta revisão completa da linguagem, que promete ser uma das maiores revisões feitas até hoje \cite{HTML5spec}.
+A W3C trabalha em uma evolução da linguagem HTML mais preparada para este tipo de cenário, a chamada HTML5. Dentro da HTML5 existem vários detalhes em discussão e um dos mais importantes é a questão da forma como vídeo e imagem serão interpretados. O valor 5 da HTML vem por essa ser a quinta revisão completa da linguagem, que promete ser uma das maiores revisões feitas até hoje \cite{HTML5spec}.
 
 \section{Os Web Browsers}
 
-\item \noindent
-Na computação, um \ingles{Web Browser}, também chamado de Navegador, é um \ingles{software} com uma interface gráfica que possui como principal funcionalidade a apresentação de documentos virtuais da Internet, popularmente chamado de páginas da \ingles{Web}, escritos nas linguagens HTML, PHP e ASP, e podendo ser também arquivos PDF, imagens e outros tipos. O \ingles{Web Browser} É destinado principalmente para navegação na \ingles{World Wide Web}, possibilitanto ao usuário uma interação com a informação e o conteúdo publicado. O \ingles{Web Browser} surgiu juntamente com a dissminação da \ingles{World Wide Web}, que necessitava de uma ferramenta apropriada para realizar a busca das informações que estavam disponíveis na grande rede. \cite{ArchitectureWebBrowsers}
+\item \noindent 
 
-Os navegadores, basicamente realizam a comunicação com servidores \ingles{web} através do protocolo de comunicação HTTP. A partir de uma URL (\ingles{Uniform Resource Locator)} informada, é feita a requisição do documento (página) para o servidor, que processa a requisição e retorna a resposta para o navegador, na qual a exibe para o usuário. O navegador é responsável por efetuar a renderização do documento recebido, transformando-o de uma linguagem de marcação (HTML) para um documento interativo.\cite{ArchitectureWebBrowsers}
+Com a explosão do uso da \ingles{World Wide Web} na década de 90 \cite{BloombergGameChangers}, diversas grandes empresas da computação, como Microsoft, Google e Apple, investiram no desenvolvimento de novos softwares que possibilitassem aos usuários a busca de dados e informações que estivessem publicadas Internet. Na computação, um \ingles{Web Browser}, também chamado de Navegador, é um \ingles{software} com uma interface gráfica que possui como principal funcionalidade a apresentação de documentos virtuais da Internet, popularmente chamado de páginas da \ingles{Web}.
 
-Com a explosão da utilização da \ingles{Web} na década de 90 \cite{BloombergGameChangers}, diversas grandes empresas da computação, como Microsoft, Google e Apple, investiram no desenvolvimento de novos navegadores para a Internet. Nos dias de hoje, existem cinco principais navegadores utilizados mundialmente, são eles: Microsoft Internet Explorer (Microsoft), Mozilla Firefox (Mozilla Corporation \& Mozilla Foundation), Safari (Apple), Google Chrome (Google) e Opera (Opera Software).
+O navegador é, talvez, o software mais amplamente utilizado na história e teve uma evolução significante nos últimos quinze anos. Hoje em dia, usuários dos mais variados níveis, utilizam navegadores em diversos tipos de \ingles{hardware}, desde celulares e \ingles{tablets} até computadores comuns \cite{ArchitectureWebBrowsers}.
 
-A concorrência existente entre as empresas e os produtos oferecidos atualmente, se dá principalmente pela velocidade de navegação e a utilização dos recursos computacionais. Cada dia mais, surgem novos padrões e estudos de novas tecnologias relacionadas, que possibilitam que os navegadores tenham um melhor desempenho na execução da suas funções. Como exemplo do HTML5, na qual tem como objetivo tornar o conteúdo das páginas mais dinâmico, deixando de lado o conceito do browser que apenas realiza a apresentação do documento, mas que interaja como uma aplicação única através dos recursos e ferramentas. \cite{WebAppPlataform}
+De acordo com as estatísticas de \ingles{market share} apresentadas na Tabela 1, os navegadores mais utilizados mundialmente são: Opera (Opera Software), Safari (Apple), Internet Explorer (Microsoft), Firefox (Mozilla Corporation \& Mozilla Foundation) e Chrome (Google), em ordem crescente de popularidade \cite{W3schools}.
+
+\begin{table}[ht]
+	\centering
+	\caption{Estatísticas de utilização dos Navegadores por mês \cite{W3schools}.
+	\label{tbl:padc}}{
+		\vspace{0.3cm}
+		\begin{tabular}{|l|l|l|l|l|l|}
+	    	\hline
+			\textbf{2012} & \textbf{Internet Explorer} & \textbf{Firefox} &\textbf{Chrome} & \textbf{Safari} & \textbf{Opera} \\
+			\hline
+			September	& 16.4\& & 32.2\& & 44.1\& & 4.2\& & 2.1\& \\
+			\hline
+			August		& 16.2\& & 32.8\& & 43.7\& & 4.0\& & 2.2\& \\
+			\hline
+			July		& 16.3\& & 33.7\& & 42.9\& & 3.9\& & 2.1\& \\
+			\hline
+			June		& 16.7\& & 34.4\& & 41.7\& & 4.1\& & 2.2\& \\
+			\hline
+			May			& 18.1\& & 35.2\& & 39.3\& & 4.3\& & 2.2\& \\
+			\hline
+			April		& 18.3\& & 35.8\& &	38.3\& & 4.5\& & 2.3\& \\
+			\hline
+			March		& 18.9\& & 36.3\& &	37.3\& & 4.4\& & 2.3\& \\
+			\hline
+			February	& 19.5\& & 36.6\& &	36.3\& & 4.5\& & 2.3\& \\
+			\hline
+			January		& 20.1\& & 37.1\& &	35.3\& & 4.3\& & 2.4\& \\
+			\hline
+		\end{tabular}
+		}
+\end{table}
+A principal funcionalidade de um navegador é apresentar ao usuário o recurso da \ingles{Web} que ele escolher. Este  recurso geralmente é um documento em formato HTML, podendo ser também uma imagem, um arquivo PDF ou outro formato. A localização do recurso é especificada pelo usuário através de um URL (Uniform Resource Locator), na qual é traduzido pelo navegador e utilizado para realizar a solicitação das informações para um servidor web e posteriormente, exibi-los em sua janela \cite{ArchitectureWebBrowsers}.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=1]{web_basic.png}
+  \caption{Fluxo básico de requisição de uma página da \ingles{Web} para um servidor \protect\cite{BrowserStats}}
+\end{figure}
+ 
+A forma com que o navegador interpreta e exibe arquivos HTML (HiperText Markup Language) e folhas de estilo CSS (Cascading Style Sheet) são especificações mantidas pela W3C (\ingles{World Wide Web Consortium}).
+
+A interface gráfica de um navegador possui diversos elementos que são comuns indepentende do software que esteja sendo utilizado. Entre estes elementos, pode-se citar: 
+\begin{itemize}
+	\item Barra de endereços para digitação de URL;
+	\item Botão de Home na qual leva o usuário para a página inicial;
+	\item Botões de Voltar e Avançar para as páginas que já foram visualizadas;
+	\item Botão de Favoritos;
+	\item Botão de Atualizar e Parar para atualizar e cancelar o carregamento de páginas.
+\end{itemize}
+
+A concorrência existente entre as empresas e os produtos oferecidos atualmente, se dá principalmente pela velocidade de navegação e a utilização dos recursos computacionais. Cada dia mais, surgem novos padrões e estudos de novas tecnologias relacionadas, que possibilitam que os navegadores tenham um melhor desempenho na execução da suas funções. Um exemplo é o HTML5, que tem como objetivo tornar o conteúdo das páginas mais dinâmico, deixando de lado o conceito do browser que apenas realiza a apresentação do documento, mas que interaja como uma aplicação única através dos recursos e ferramentas \cite{WebAppPlataform}.
 
 \section{HTML5}
 
 \item \noindent
-Em 1998 o W3C decidiu que eles não iriam mais continuar o desenvolvimento da linguagem da \ingles{Web} até então, a HTML \ingles{(HyperText Markup Language)}. Ao invés disto eles iriam trabalhar em um novo formato o qual acreditavam ser o futuro da \ingles{Web}, assim nasceu a linguagem XHTML \ingles{(Extensible HyperText Markup Language)} que se fundamentava nos princípios da XML \ingles{(Extensible Markup Language)}. Desta forma a revisão 4.01 da HTML foi congelada e os esforços se direcionaram para a evolução da XHTML que em sua versão 2.0 trazia além de muitas mudanças revolucionárias, a quebra de toda compatibilidade das aplicações escritas nas versões anteriores da especificação.
+Em 1998 o W3C decidiu que eles não iriam mais continuar o desenvolvimento da linguagem da \ingles{Web} até então, a HTML \ingles{(HyperText Markup Language)}. Ao invés disto eles iriam trabalhar em um novo formato o qual acreditavam ser o futuro da \ingles{Web}, assim nasceu a linguagem XHTML \ingles{(Extensible HyperText Markup Language)} que se fundamentava nos princípios da XML \ingles{(Extensible Markup Language)}. Desta forma a revisão 4.01 da HTML foi congelada, e os esforços se direcionaram para a evolução da XHTML que em sua versão 2.0 trazia além de muitas mudanças revolucionárias, a quebra de toda compatibilidade das aplicações escritas nas versões anteriores da especificação.
 
-Muitos não gostaram desta nova iniciativa, em particular um grupo que trabalhava no desenvolvimento do navegador Opera, que não ficou parado e além de não adotar a XHTML começou a trabalhar na especificação de uma linguagem HTML extensiva que não quebrasse a compatibilidade das versões anteriores.  A especificação foi inicialmente chamada de \ingles{Web Forms} 2.0 e mais tarde foi nomeada com HTML5 por ser a quinta revisão da HTML \cite{HTML5Intro}. O W3C então começou a trabalhar na quinta revisão e apesar de não ter sido lançada nenhuma versão final da especificação, praticamente todos navegadores já implementam o suporte à nova definição da HTML.
+Muitos não gostaram desta nova iniciativa, em particular um grupo que trabalhava no desenvolvimento do navegador Opera, que não ficou parado, e além de não adotar a XHTML, começou a trabalhar na especificação de uma linguagem HTML extensiva que não quebrasse a compatibilidade das versões anteriores.  A especificação foi inicialmente chamada de \ingles{Web Forms} 2.0 e mais tarde foi nomeada para HTML5 por ser a quinta revisão da HTML \cite{HTML5Intro}. O W3C então começou a trabalhar na quinta revisão e apesar de não ter sido lançada nenhuma versão final da especificação, praticamente todos navegadores já implementam o suporte à nova definição da HTML.
 
-Uma das necessidades que a HTML5 deve suprir é o suporte para processamento de vídeo e som que nos dias de hoje se fundamenta no \ingles{plugin Flash}. Para esta implementação foi escolhido o formato WebM que possibilita aos navegadores renderizar nativamente vídeo e áudio sem a necessidade de \ingles{plugins} adicionais. O formato WebM é composto pelo método de compressão de vídeo VP8 e o padrão de áudio Vorbis. O WebP é parte integrante do WebM só que com foco voltado para compressão de imagens.
+Uma das necessidades que a HTML5 deve suprir é o suporte para processamento de vídeo e som que nos dias de hoje se fundamenta no \ingles{plugin Flash}. Para esta implementação foi escolhido o formato WebM que possibilita aos navegadores renderizar nativamente vídeo e áudio sem a necessidade de \ingles{plugins} adicionais. O formato WebM é composto pelo método de compressão de vídeo VP8 e o padrão de áudio Vorbis. O WebP é parte integrante do WebM, porém com foco voltado para compressão de imagens.
 
-\section{WebP}
+\end{description}
+
+\chapter{WebP}
+
+\begin{description}
+
+\section{Contextualização}
 
 \item \noindent
 O WebP é um novo formato de imagem que implementa compressão \ingles{lossless} e \ingles{lossy} para imagens na \ingles{Web}. Utilizando uma técnica de compressão \ingles{lossless} o WebP consegue apresentar imagens 26\% menores no tamanho quando comparado com o formato PNG. Utilizando imagens com \ingles{lossy} os resultados são ainda melhores reduzindo de 25-34\% quando comparado com o formato JPEG. O WebP também fornece suporte a transparência com apenas 22\% de \ingles{bytes} adicionais. O WebP utiliza uma metodologia semelhante aquela usada na compressão VP8 que faz parte do pacote WebM para o processamento de vídeo e áudio \cite{WebPLossyStudy}.
@@ -176,14 +234,13 @@ Atualmente o JPEG XR é suportado por diversas aplicações Adobe Flash Player 1
 
 \item \noindent
 Conforme apresentado na seção 1.3, o objetivo deste trabalho visa contribuir com o desenvolvimento de uma solução para codificação e decodificação do formato de imagem WebP para o browser Mozilla Firefox. 
+Pretende-se, realizar em tempo de execução, a renderização de imagens do formato WebP através da utilização do Mozilla Firefox, possibilitanto que o navegador realize a leitura e exibição deste formato de imagem para o usuário. Inicialmente será realizado um estudo da biblioteca do formato WebP, na qual é disponibilizada pelo Google. 
 A motivação do desenvolvimento desta solução, conforme descrito na seção 1.2, se dá pelo fato de que o formato WebP já se encontrar em um estado avançado de desenvolvimento e maturidade, e já estar recebendo suporte nativo dos browsers Google Chrome e Opera. 
 
 O aumento na capacidade de compressão do formato \ingles{WebP} trará de imediato a melhora no tempo de resposta para o \ingles{download} da imagem no navegador do usuário e também diminuirá o trafego na comunicação entre cliente e servidor. É importante ressaltar também que a popularização e utilização em massa deste novo formato irá beneficiar na diminuição do trafego de rede dentro da internet de uma maneira global, e isso resulta diretamente em uma vazão maior para outros recursos que consomem mais banda, como é o caso de um \ingles{streaming} de vídeo por exemplo.
 
 \section{Ambiente de Desenvolvimento}
-
-\item \noindent
-Para montagem do ambiente de desenvolvimento será necessário realizar o \ingles{checkout} de todo código fonte do Mozilla Firefox a partir do CVS oficial pois o trabalho será realizado em cima de classes e métodos já existentes. O navegador é desenvolvido utilizando a linguagem de programação C++, por tanto está será a linguagem na qual o trabalho será desenvolvido. Deverá ser feita uma análise para identificar a necessidade de reescrever a biblioteca \ingles{WebP} de acordo com a sua especificação ou se poderá haver um reaproveitamento de código da implementação que já existe.
+Analise da biblioteca, analise do \ingles{patch}, pontos de melhoria, nova solução, ferramentas utilizadas no desenvolvimento.
 
 \chapter{Recursos Necessários}
 A seguir serão apresentados os recursos mínimos de \ingles{hardware} e \ingles{software} necessários para o desenvolvimento do trabalho proposto.
@@ -219,15 +276,15 @@ Neste capítulo serão descritas as tarefas que devem ser realizadas no decorrer
 
 \section{Atividades}
 \begin{itemize}
-        \item Estudo da biblioteca e do formato WebP.
-        \item Estudo e detalhamento do código do Mozilla Firefox para renderização de imagens.
-        \item Estudo e detalhamento dos padrões de codificação do Mozilla Firefox.
-        \item Modelagem das classes para codificação e decodificação a partir dos estudos realizados.
-        \item Desenvolvimento da documentação para o trabalho final.
-
+	\item Estudo da biblioteca e do formato WebP.
+	\item Estudo e detalhamento do código do Mozilla Firefox para renderização de imagens.
+	\item Estudo e detalhamento dos padrões de codificação do Mozilla Firefox.
+	\item Modelagem das classes para codificação e decodificação a partir dos estudos realizados. 
+	\item Desenvolvimento da documentação para o trabalho final.
+	
 \end{itemize}
 \section{Cronograma}
-\begin{figure}[H]
+\begin{figure}[h]
   \centering
     \includegraphics[width=0.9\textwidth]{scheduler.png}
   \caption{Planejamento das atividades para desenvolvimento do trabalho}
