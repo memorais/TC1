@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.8.22)  19 NOV 2012 19:15
-=======
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.8.22)  19 NOV 2012 18:59
->>>>>>> Stashed changes
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.8.22)  19 NOV 2012 20:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -802,7 +798,6 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 263.
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< Updated upstream
  6804 strings out of 495039
  100058 string characters out of 3181249
  196439 words of memory out of 3000000
@@ -810,15 +805,6 @@ Here is how much of TeX's memory you used:
  32512 words of font info for 61 fonts, out of 3000000 for 9000
  16 hyphenation exceptions out of 8191
  30i,10n,41p,1220b,482s stack positions out of 5000i,500n,10000p,200000b,50000s
-=======
- 6820 strings out of 495039
- 100259 string characters out of 3181249
- 196445 words of memory out of 3000000
- 9786 multiletter control sequences out of 15000+200000
- 34097 words of font info for 63 fonts, out of 3000000 for 9000
- 16 hyphenation exceptions out of 8191
- 30i,10n,41p,1220b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
->>>>>>> Stashed changes
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
@@ -826,11 +812,7 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
 w/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-<<<<<<< Updated upstream
-Output written on proposta.pdf (17 pages, 194512 bytes).
-=======
-Output written on proposta.pdf (19 pages, 231622 bytes).
->>>>>>> Stashed changes
+Output written on proposta.pdf (17 pages, 195114 bytes).
 PDF statistics:
  316 PDF objects out of 1000 (max. 8388607)
  277 compressed objects within 3 object streams
