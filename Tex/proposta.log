@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.8.22)  20 NOV 2012 17:21
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Debian) (format=pdflatex 2012.8.22)  22 NOV 2012 09:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -714,7 +714,7 @@ l.21 \sumario
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 30.
-<Plot3_cdfcompr.png, id=131, 950.55125pt x 562.1pt>
+<Plot3_cdfcompr.png, id=136, 950.55125pt x 562.1pt>
 File: Plot3_cdfcompr.png Graphic file (type png)
  <use Plot3_cdfcompr.png>
 Package pdftex.def Info: Plot3_cdfcompr.png used on input line 46.
@@ -723,7 +723,7 @@ Package pdftex.def Info: Plot3_cdfcompr.png used on input line 46.
 [3
 
 
-] <BrowserCounter.png, id=146, 602.25pt x 602.25pt>
+] <BrowserCounter.png, id=151, 602.25pt x 602.25pt>
 File: BrowserCounter.png Graphic file (type png)
  <use BrowserCounter.png>
 Package pdftex.def Info: BrowserCounter.png used on input line 54.
@@ -736,7 +736,7 @@ LaTeX Warning: `h' float specifier changed to `ht'.
 Cap\'{\i }tulo 2.
 [6
 
-] [7] <web_basic.png, id=200, 372.39125pt x 159.59625pt>
+] [7] <web_basic.png, id=205, 372.39125pt x 159.59625pt>
 File: web_basic.png Graphic file (type png)
  <use web_basic.png>
 Package pdftex.def Info: web_basic.png used on input line 134.
@@ -753,56 +753,56 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 Cap\'{\i }tulo 3.
 [10
 
-] [11] <LossyLossLessExtended.png, id=240, 598.235pt x 529.98pt>
+] [11] <LossyLossLessExtended.png, id=245, 598.235pt x 529.98pt>
 File: LossyLossLessExtended.png Graphic file (type png)
 
 <use LossyLossLessExtended.png>
 Package pdftex.def Info: LossyLossLessExtended.png used on input line 199.
 (pdftex.def)             Requested size: 273.14923pt x 241.99039pt.
 
-<AlphaChunk.png, id=241, 593.21625pt x 133.49875pt>
+<AlphaChunk.png, id=246, 593.21625pt x 133.49875pt>
 File: AlphaChunk.png Graphic file (type png)
  <use AlphaChunk.png>
 Package pdftex.def Info: AlphaChunk.png used on input line 207.
 (pdftex.def)             Requested size: 227.62206pt x 51.22504pt.
 
-[12 <./LossyLossLessExtended.png> <./AlphaChunk.png>]
+[12 <./LossyLossLessExtended.png> <./AlphaChunk.png>] [13]
 Cap\'{\i }tulo 4.
 
-Overfull \hbox (12.39293pt too wide) in paragraph at lines 236--237
+Overfull \hbox (12.39293pt too wide) in paragraph at lines 265--266
 []\OT1/ptm/m/n/12 Op[][]oes do usu[]ario quanto ao ta-ma-nho, qua-li-dade e n[]
 umero de ima-gem de visualiza[][]ao-
  []
 
-[13
+[14
 
 ]
 
-LaTeX Warning: Citation `HDPhoto' on page 14 undefined on input line 256.
+LaTeX Warning: Citation `HDPhoto' on page 15 undefined on input line 285.
 
-[14]
+[15]
 Cap\'{\i }tulo 5.
-[15
+[16
 
-] [16]
+] [17]
 Cap\'{\i }tulo 6.
-(./proposta.bbl [17
+(./proposta.bbl [18
 
 ])
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 295.
-[18
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 324.
+[19
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 295.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 324.
  (./proposta.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 295.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 295.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 324.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 324.
 Package rerunfilecheck Info: File `proposta.out' has not changed.
-(rerunfilecheck)             Checksum: E75B7CAD33B1BA438E18CCC28F98A470;1327.
+(rerunfilecheck)             Checksum: 897CA62606A74066E0D9697A4636087E;1387.
 
 
 LaTeX Warning: There were undefined references.
@@ -810,16 +810,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 295.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 324.
  ) 
 Here is how much of TeX's memory you used:
- 6836 strings out of 495039
- 100673 string characters out of 3181249
+ 6839 strings out of 495039
+ 100704 string characters out of 3181249
  196533 words of memory out of 3000000
- 9798 multiletter control sequences out of 15000+200000
+ 9799 multiletter control sequences out of 15000+200000
  32512 words of font info for 61 fonts, out of 3000000 for 9000
  16 hyphenation exceptions out of 8191
- 30i,10n,41p,1231b,482s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,10n,41p,1231b,511s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
@@ -827,10 +827,10 @@ f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist
 w/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a
 .pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on proposta.pdf (19 pages, 225256 bytes).
+Output written on proposta.pdf (20 pages, 226886 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 292 compressed objects within 3 object streams
- 61 named destinations out of 1000 (max. 500000)
- 202 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 344 PDF objects out of 1000 (max. 8388607)
+ 300 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 210 words of extra memory for PDF output out of 10000 (max. 10000000)
 

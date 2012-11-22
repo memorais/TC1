@@ -64,7 +64,7 @@ O aumento na capacidade de compressão do formato \ingles{WebP} trará de imedia
 \item \noindent
 Com o objetivo de aumentar a disseminação do novo formato dentro da \ingles{Web}, a proposta é de habilitar o suporte dentro do Mozilla Firefox. Embora a implementação do suporte ao \ingles{WebP} esteja somente disponível para dois navegadores (Chrome e Opera), estes constituem mais de 29\% de todos os navegadores utilizados dentro da internet hoje. A implementação do suporte ao \ingles{WebP} dentro do Mozilla Firefox aumentará este percentual para 52\%, já que cerca de 22\% dos navegadores utilizados hoje são Mozilla Firefox \cite{BrowserStats}.
 
-O objetivo deste trabalho não será a aceitação da implementação realizada dentro do código fonte no repositório oficial do Firefox. O objetivo é somente que a renderização nativa seja implementada. O trabalho desenvolvido aqui será entregue à comunidade do Firefox mas sua aplicação não é o alvo principal.
+O objetivo deste trabalho não será a aceitação da implementação realizada dentro do código fonte no repositório oficial do Firefox. O objetivo é somente que a renderização nativa do formato WebP seja implementada dentro do navegador. O trabalho desenvolvido aqui poderá ser entregue à comunidade do Firefox mas sua aplicação não é o alvo principal.
 
 \end{description}
 
@@ -207,6 +207,35 @@ A diferença nos formatos simples com compressão \ingles{lossy} e \ingles{lossl
     \includegraphics[width=0.5\textwidth]{AlphaChunk.png}
   \caption{Pedaço que é acrescentado quando o \ingles{bit alpha} é setado para 1}
 \end{figure}
+
+\section{A API libwebp}
+
+\item \noindent
+A equipe de desenvolvimento do WebP mantém uma biblioteca chamada libwebp que oferece suporte a criação de ferramentas para a manipulação do formato. No que tange a este trabalho serão utilizadas as bibliotecas para codificação e decodificação (encode.h e decode.h). Também será necessário utilizar a biblioteca que define os tipos básicos de variáveis e estruturas definidos pelo formato WebP (type.h).
+
+De acordo com a avaliação feita nos testes as seguintes funções serão utilizadas para criação do decodificador:
+
+\begin{itemize}
+	\item WebPGetDecoderVersion
+	\item WebPGetInfo
+	\item WebPDecodeRGB
+	\item WebPDecodeRGBA
+	\item WebPDecodeARGB
+	\item WebPDecodeBGR
+	\item WebPDecodeBGRA
+\end{itemize}
+
+As funções utilizadas para criação do codificador serão as seguintes:
+
+\begin{itemize}
+	\item WebPGetEncoderVersion
+	\item WebPEncodeRGB
+	\item WebPEncodeRGBA
+	\item WebPEncodeBGR
+	\item WebPEncodeBGRA
+\end{itemize}
+
+A documentação da biblioteca libwebp é bem simples e direta mas oferece diversos exemplos de utilização, o que a torna bem didática. Nos exemplos criados para este trabalho até o momento, não houve qualquer dificuldade com a utilização das funções e procedimentos definidos pela biblioteca. A utilização dela é peça fundamental para implementação do projeto.
 
 \end{description}
 

@@ -11,13 +11,14 @@
 \contentsline {section}{\numberline {3.1}Contextualiza\IeC {\c c}\IeC {\~a}o}{10}{section.3.1}
 \contentsline {section}{\numberline {3.2}Mozilla Firefox e o WebP}{10}{section.3.2}
 \contentsline {section}{\numberline {3.3}Especifica\IeC {\c c}\IeC {\~a}o do Container WebP}{11}{section.3.3}
-\contentsline {chapter}{\numberline {4}Trabalhos Relacionados}{13}{chapter.4}
-\contentsline {section}{\numberline {4.1}JPEG 2000}{13}{section.4.1}
-\contentsline {section}{\numberline {4.2}JPEG XR}{14}{section.4.2}
-\contentsline {chapter}{\numberline {5}Proposta}{15}{chapter.5}
-\contentsline {section}{\numberline {5.1}Objetivos}{15}{section.5.1}
-\contentsline {section}{\numberline {5.2}Ambiente de Desenvolvimento}{15}{section.5.2}
-\contentsline {section}{\numberline {5.3}Modelagem e Arquitetura}{15}{section.5.3}
-\contentsline {section}{\numberline {5.4}Projeto}{16}{section.5.4}
-\contentsline {chapter}{\numberline {6}Coment\IeC {\'a}rios Finais}{17}{chapter.6}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{18}{chapter.6}
+\contentsline {section}{\numberline {3.4}A API libwebp}{12}{section.3.4}
+\contentsline {chapter}{\numberline {4}Trabalhos Relacionados}{14}{chapter.4}
+\contentsline {section}{\numberline {4.1}JPEG 2000}{14}{section.4.1}
+\contentsline {section}{\numberline {4.2}JPEG XR}{15}{section.4.2}
+\contentsline {chapter}{\numberline {5}Proposta}{16}{chapter.5}
+\contentsline {section}{\numberline {5.1}Objetivos}{16}{section.5.1}
+\contentsline {section}{\numberline {5.2}Ambiente de Desenvolvimento}{16}{section.5.2}
+\contentsline {section}{\numberline {5.3}Modelagem e Arquitetura}{16}{section.5.3}
+\contentsline {section}{\numberline {5.4}Projeto}{17}{section.5.4}
+\contentsline {chapter}{\numberline {6}Coment\IeC {\'a}rios Finais}{18}{chapter.6}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{19}{chapter.6}
