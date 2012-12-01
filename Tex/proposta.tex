@@ -166,19 +166,19 @@ Uma das necessidades que a HTML5 deve suprir é o suporte para processamento de 
 \section{Introdução}
 
 \item \noindent
-O WebP é um novo formato de imagem que implementa compressão \ingles{lossless} e \ingles{lossy} para imagens na \ingles{Web}. Utilizando uma técnica de compressão \ingles{lossless} o WebP consegue apresentar imagens 26\% menores no tamanho quando comparado com o formato PNG. Utilizando imagens com \ingles{lossy} os resultados são ainda melhores reduzindo de 25-34\% quando comparado com o formato JPEG. O WebP também fornece suporte a transparência com apenas 22\% de \ingles{bytes} adicionais. O WebP utiliza uma metodologia semelhante aquela usada na compressão VP8 que faz parte do pacote WebM para o processamento de vídeo e áudio \cite{WebPLossyStudy}.
+O WebP é um novo formato de imagem que implementa compressão \ingles{lossless} e \ingles{lossy} para imagens na \ingles{Web}. Na computação a compressão \ingles{lossless} é aquela que permite a exata reconstrução de uma informação original a partir da informação comprimida, já a compressão \ingles{lossy} é aquela onde porções da informação original são descartadas (perdidas) para que haja efetivamente a compressão. Desta forma é a compressão \ingles{lossy} é utilizada para situações onde a integridade da informação não é exatamente necessária, como é o caso de imagens, vídeo e áudio. Utilizando uma técnica de compressão \ingles{lossless} o WebP consegue apresentar imagens 26\% menores no tamanho quando comparado com o formato PNG. Utilizando imagens com \ingles{lossy} os resultados são ainda melhores reduzindo de 25-34\% quando comparado com o formato JPEG. Ele também fornece suporte a transparência com apenas 22\% de \ingles{bytes} adicionais. O WebP utiliza uma metodologia semelhante aquela usada na compressão VP8 que faz parte do pacote WebM para o processamento de vídeo e áudio \cite{WebPLossyStudy}.
 
-A tecnologia por trás do WebP é fundamentada no conceito de \ingles{block prediction}. Cada bloco tem seu valor predito baseando-se nos três blocos acima dele e no primeiro bloco a esquerda dele. Existem quatro métodos para previsão dos blocos, a horizontal, a vertical, a DC e a \ingles{TrueMotion}. As informações que foram previstas incorretamente e os blocos que não são previsíveis são comprimidos em um sub-bloco de 4x4 \ingles{pixels}. No final o resultado é comprimido utilizando \ingles{Entropy encoding} que é um método \ingles{lossless} amplamente usado para compressão de dados.
+A tecnologia por trás do WebP é fundamentada no conceito de \ingles{block prediction}. Cada bloco tem seu valor previsto baseando-se nos três blocos acima dele e no primeiro bloco a esquerda dele. Existem quatro métodos para previsão dos blocos, a horizontal, a vertical, a DC e a \ingles{TrueMotion}. As informações que foram previstas incorretamente e os blocos que não são previsíveis são comprimidos em um sub-bloco de 4x4 \ingles{pixels}. No final o resultado é comprimido utilizando \ingles{Entropy encoding} que é um método \ingles{lossless} amplamente usado para compressão de dados.
 
-O suporte à codificação e decodificação do WebP está disponível nos navegadores Google Chrome e Opera. Como o Mozilla Firefox já possui suporte ao WebM, alguma parte do código para a implementação do WebP já reside dentro do navegador uma vez que tanto WebP quanto VP8 utilizam a mesma técnica para a compressão de imagens, no caso do vídeo o mesmo conceito é utilizado para compressão do \ingles{frames}.
+O suporte à codificação e decodificação do WebP está disponível nos navegadores Google Chrome e Opera. Como o Mozilla Firefox já possui suporte ao WebM, alguma parte do código para a implementação do WebP já reside dentro do navegador uma vez que tanto WebP quanto VP8 utilizam a mesma técnica para a compressão de imagens pois, no caso do vídeo o mesmo conceito é utilizado para compressão do \ingles{frames}.
 
 \section{Mozilla Firefox e o WebP}
 
 \item \noindent
 
-O formato WebP foi disponibilizado em 2010 mas nunca conseguiu ser integrado ao Mozilla Firefox. Inclusive na época um \ingles{bug} foi aberto dentro do \ingles{bugzilla} da Mozilla solicitando a implementação do formato WebP \cite{FirefoxBug}. Naquela tempo a equipe principal de desenvolvimento do Mozilla Firefox decidiu por não realizar a implementação em virtude de uma série de considerações contrárias ao formato WebP \cite{WebPCritica}. O time de desenvolvimento do WebP levou em conta as críticas que recebeu dos desenvolvedores do Mozilla Firefox e fez uma série de ajustes para suprir as necessidades que estavam sendo demandadas. Embora praticamente todos os apontamentos dados tenham sido ajustados ainda não há uma clara razão do por que ele ainda não foi implementado. Em 2010 um \ingles{patch} rudimentar foi escrito por um membro da comunidade e submetido mas não foi aceito. Existem também algumas extensões que fazem com que o Firefox consiga exibir imagens WebP, porem estas extensões não caracterizam um desenvolvimento adequado visto que elas dependem de plugins adicionais. A proposta é que o navegador seja capaz de realizar a renderização nativamente.
+O formato WebP foi disponibilizado em 2010 mas nunca conseguiu ser integrado ao Mozilla Firefox. Inclusive na época um \ingles{bug} foi aberto dentro do \ingles{bugzilla} da Mozilla solicitando a implementação do formato WebP \cite{FirefoxBug}. Naquele tempo a equipe principal de desenvolvimento do Mozilla Firefox decidiu por não realizar a implementação em virtude de uma série de considerações contrárias ao formato WebP \cite{WebPCritica}. O time de desenvolvimento do WebP levou em conta as críticas que recebeu dos desenvolvedores do Mozilla Firefox e fez uma série de ajustes para suprir as necessidades que estavam sendo demandadas. Embora praticamente todos os apontamentos dados tenham sido ajustados, ainda não há uma clara razão do por que ele ainda não foi implementado. Em 2010 um \ingles{patch} rudimentar foi escrito e submetido por um membro da comunidade, mas não foi aceito. Existem também algumas extensões que fazem com que o Firefox consiga exibir imagens WebP, porem estas extensões não caracterizam um desenvolvimento adequado visto que elas dependem de plugins adicionais. A proposta é que o navegador seja capaz de realizar a renderização nativamente.
 
-Pelo que se pode averiguar parece que há por trás disso uma razão política na não adoção do formato WebP até o presente momento. Apesar do Google ter aumentado os investimentos no desenvolvimento do Mozilla Firefox em 2011, o Google Chrome vem tomando espaço do Firefox na internet e há um temor de que a própria existência do Firefox esteja ameaçada graças ao grande sucesso do navegador concorrente. Entretanto pelo que foi pesquisado dentro da comunidade há alguma chance de que caso uma implementação decente seja feita, ela poderá ser aceita dentro do código oficial.
+Pelo que se pode averiguar, parece que há por trás disso uma razão política na não adoção do formato WebP até o presente momento. Apesar do Google ter aumentado os investimentos no desenvolvimento do Mozilla Firefox em 2011, o Google Chrome vem tomando espaço do Firefox na internet e há um temor de que a própria existência do Firefox esteja ameaçada graças ao grande sucesso do navegador concorrente. Entretanto pelo que foi pesquisado dentro da comunidade há alguma chance de que caso uma boa implementação seja feita, ela poderá ser aceita dentro do código oficial.
 
 Nenhum trecho do \ingles{patch} enviado em 2010 através do \ingles{bug} aberto será aproveitado dentro deste trabalho, será necessário uma produção a partir do zero.
 
@@ -186,13 +186,13 @@ Nenhum trecho do \ingles{patch} enviado em 2010 através do \ingles{bug} aberto 
 
 \item \noindent
 
-Como um formato de imagem, o WebP utiliza um \ingles{container} RIFF (\ingles{Resource Interchange File Format}) para armazenamento das informações necessárias para utilização do formato dentro de um arquivo. O \ingles{container} do WebP também oferece como característica o suporte para a compressão \ingles{lossless} e o efeito de transparência que pode ser obtido através de um canal alpha. De forma geral o arquivo WebP é composto da imagem representada por uma matriz de \ingles{pixels} no formato VP8 e opcionalmente a informação em relação a transparência.
+Como um formato de imagem, o WebP utiliza um \ingles{container} RIFF (\ingles{Resource Interchange File Format}) para armazenamento das informações necessárias para utilização do formato dentro de um arquivo. O \ingles{container} do WebP também oferece como característica o suporte para a compressão \ingles{lossless} e o efeito de transparência que pode ser obtido através de um canal \ingles{alpha}. De forma geral o arquivo WebP é composto da imagem representada por uma matriz de \ingles{pixels} no formato VP8 e opcionalmente a informação em relação a transparência.
 
-Basicamente existem três tipos de arquivos, o formato simples com compressão \ingles{lossy}, o formato simples com a compressão \ingles{lossless} e o formato estendido. Em todos os três tipos existe o cabeçalho do arquivo, que é composto inicialmente pelos caracteres 'RIFF' em ASCII, seguido da informação em relação ao tamanho do arquivo em \ingles{bytes} e por último os caracteres 'WEBP' em ASCII.
+Basicamente, existem três tipos de arquivos: o formato simples com compressão \ingles{lossy}, o formato simples com a compressão \ingles{lossless} e o formato estendido. Em todos os três tipos existe o cabeçalho do arquivo, que é composto inicialmente pelos caracteres 'RIFF' em ASCII, seguido da informação em relação ao tamanho do arquivo em \ingles{bytes} e por último os caracteres 'WEBP' em ASCII.
 
 \newpage
 
-Abaixo a ilustração do formato simples com compressão \ingles{lossy}, do formato simples com a compressão \ingles{lossless} e do formato estendido respectivamente.
+A figura 3.1 ilustra o formato simples com compressão \ingles{lossy}, o formato simples com a compressão \ingles{lossless} e o formato estendido, respectivamente.
 
 \begin{figure}[h]
   \centering
@@ -200,20 +200,20 @@ Abaixo a ilustração do formato simples com compressão \ingles{lossy}, do form
   \caption{Formato simples com compressão \ingles{lossy}, formato simples com a compressão \ingles{lossless} e formato estendido}
 \end{figure}
 
-A diferença nos formatos simples com compressão \ingles{lossy} e \ingles{lossless} está no pedaço VP8 que por padrão faz a compactção com perda de dados, enquanto que o pedaço VP8L utiliza a compactção sem perda. Já o formato estendido é composto por um pedaço VP8X, mais a informação do canal alpha (L) e o \ingles{bitstream} VP8 ou VP8L. Caso o \ingles{bit alpha} seja setado com valor 1 no formato estendido, sera acrescentado um pedaço adicional para a transparência, como mostra a figura abaixo.
+A diferença nos formatos simples com compressão \ingles{lossy} e \ingles{lossless} está no pedaço VP8 que por padrão faz a compactação com perda de dados, enquanto que o pedaço VP8L utiliza a compactação sem perda. Já o formato estendido é composto por um pedaço VP8X, mais a informação do canal \ingles{alpha} (L) e o \ingles{bitstream} VP8 ou VP8L. Caso o \ingles{bit alpha} seja setado com valor 1 no formato estendido, sera acrescentado um pedaço adicional para a transparência, como mostra a figura 3.2.
 
 \begin{figure}[h]
   \centering
     \includegraphics[width=0.5\textwidth]{AlphaChunk.png}
-  \caption{Pedaço que é acrescentado quando o \ingles{bit alpha} é setado para 1}
+  \caption{Pedaço que é acrescentado quando o \ingles{bit alpha} é definido para 1}
 \end{figure}
 
 \section{A API libwebp}
 
 \item \noindent
-A equipe de desenvolvimento do WebP mantém uma biblioteca chamada libwebp que oferece suporte a criação de ferramentas para a manipulação do formato. No que tange a este trabalho serão utilizadas as bibliotecas para codificação e decodificação (encode.h e decode.h). Também será necessário utilizar a biblioteca que define os tipos básicos de variáveis e estruturas definidos pelo formato WebP (type.h).
+A equipe de desenvolvimento do WebP mantém uma biblioteca chamada libwebp que oferece suporte para a criação de ferramentas para a manipulação do formato. No que tange a este trabalho serão utilizadas as bibliotecas para codificação e decodificação (encode.h e decode.h). Também será necessário utilizar a biblioteca que define os tipos básicos de variáveis e estruturas definidos pelo formato WebP (type.h).
 
-De acordo com a avaliação feita nos testes as seguintes funções serão utilizadas para criação do decodificador:
+De acordo com a avaliação feita no código fonte e nas definições da biblioteca, as seguintes funções serão utilizadas para criação do decodificador:
 
 \begin{itemize}
 	\item WebPGetDecoderVersion
@@ -235,7 +235,7 @@ As funções utilizadas para criação do codificador serão as seguintes:
 	\item WebPEncodeBGRA
 \end{itemize}
 
-A documentação da biblioteca libwebp é bem simples e direta mas oferece diversos exemplos de utilização, o que a torna bem didática. Nos exemplos criados para este trabalho até o momento, não houve qualquer dificuldade com a utilização das funções e procedimentos definidos pela biblioteca. A utilização dela é peça fundamental para implementação do projeto.
+A documentação da biblioteca libwebp é bem simples e direta mas oferece diversos exemplos de utilização, o que a torna bem didática. Nos exemplos criados para este trabalho até o momento, não houve qualquer dificuldade com a utilização das funções e procedimentos definidos pela biblioteca. Os exemplos trabalhados foram a criação de decodificadores e codificadores rudimentares escritos em C++ para o formato WebP com o objetivo de entender melhor como funciona internamente a API. A utilização dela é peça fundamental para implementação do projeto.
 
 \end{description}
 
@@ -303,13 +303,23 @@ Como o tempo para implementação do projeto é reduzido não haverá espaço pa
 \section{Ambiente de Desenvolvimento}
 Analise da biblioteca, analise do \ingles{patch}, pontos de melhoria, nova solução, ferramentas utilizadas no desenvolvimento.
 
-\section{Modelagem e Arquitetura}
-\item \noindent
-Descrever Modelagem e arquitetura
-
 \section{Projeto}
 \item \noindent
 Descrever Projeto
+
+\section{Modelagem e Arquitetura}
+\item \noindent
+A arquitetura de desenvolvimento do Mozilla Firefox permite a extensão de funcionalidades na renderização de imagens sem a necessidade de alteração de grandes porções de código já existente. É uma arquitetura bem modular e com baixo acoplamento, o que permite a fácil integração de novos componentes quando necessário. 
+
+De uma maneira geral, o núcleo a ser alterado para implementar a codificação e decodificação do formato WebP é a parte responsável pela inicialização das imagens (Image.h e Image.cpp) e pelo carregamento das imagens (ImageLoader.h e ImageLoader.cpp). Uma vez que o codificador e o decodificador estejam prontos, será necessário fazer alterações neste módulos para que o navegador possa nativamente manipular as imagens no formato WebP. Na figura 5.1 é possível ver um diagrama macro que mostra o nível de alteração necessária nos módulos de imagem e como eles se relacionam entre si.
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[width=0.8\textwidth]{Arquitetura.png}
+  \caption{Diagrama dos componentes e suas relações}
+\end{figure}
+
+Também serão necessárias pequenas alterações em outros pontos como por exemplo a definição do \ingles{mime-type} para o formato WebP que deve ser acrescentado dentro do Firefox, mas estas não caracterizam mudança significativas de forma que a maior parte do trabalho será realizada em cima do núcleo de manipulação de imagens do navegador, conforme mostrado no diagrama dos componentes.
 
 \end{description}
 
