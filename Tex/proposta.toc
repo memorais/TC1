@@ -1,24 +1,26 @@
 \select@language {brazil}
-\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{3}{chapter.1}
-\contentsline {section}{\numberline {1.1}Contextualiza\IeC {\c c}\IeC {\~a}o}{3}{section.1.1}
-\contentsline {section}{\numberline {1.2}Motiva\IeC {\c c}\IeC {\~a}o}{4}{section.1.2}
-\contentsline {section}{\numberline {1.3}Objetivo}{5}{section.1.3}
-\contentsline {chapter}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{6}{chapter.2}
-\contentsline {section}{\numberline {2.1}A World Wide Web}{6}{section.2.1}
-\contentsline {section}{\numberline {2.2}Navegadores}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}HTML5}{8}{section.2.3}
-\contentsline {chapter}{\numberline {3}WebP}{10}{chapter.3}
-\contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{10}{section.3.1}
-\contentsline {section}{\numberline {3.2}Mozilla Firefox e o WebP}{10}{section.3.2}
-\contentsline {section}{\numberline {3.3}Especifica\IeC {\c c}\IeC {\~a}o do Container WebP}{11}{section.3.3}
-\contentsline {section}{\numberline {3.4}A API libwebp}{12}{section.3.4}
-\contentsline {chapter}{\numberline {4}Trabalhos Relacionados}{14}{chapter.4}
-\contentsline {section}{\numberline {4.1}JPEG 2000}{14}{section.4.1}
-\contentsline {section}{\numberline {4.2}JPEG XR}{15}{section.4.2}
-\contentsline {chapter}{\numberline {5}Proposta}{16}{chapter.5}
-\contentsline {section}{\numberline {5.1}Objetivos}{16}{section.5.1}
-\contentsline {section}{\numberline {5.2}Ambiente de Desenvolvimento}{16}{section.5.2}
-\contentsline {section}{\numberline {5.3}Projeto}{16}{section.5.3}
-\contentsline {section}{\numberline {5.4}Modelagem e Arquitetura}{17}{section.5.4}
-\contentsline {chapter}{\numberline {6}Coment\IeC {\'a}rios Finais}{18}{chapter.6}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{19}{chapter.6}
+\contentsline {chapter}{Resumo}{}{chapter*.1}
+\contentsline {chapter}{Abstract}{}{chapter*.2}
+\contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{6}{chapter.abstract.1}
+\contentsline {section}{\numberline {1.1}Contextualiza\IeC {\c c}\IeC {\~a}o}{6}{section.abstract.1.1}
+\contentsline {section}{\numberline {1.2}Motiva\IeC {\c c}\IeC {\~a}o}{7}{section.abstract.1.2}
+\contentsline {section}{\numberline {1.3}Objetivo}{8}{section.abstract.1.3}
+\contentsline {chapter}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{9}{chapter.abstract.2}
+\contentsline {section}{\numberline {2.1}A World Wide Web}{9}{section.abstract.2.1}
+\contentsline {section}{\numberline {2.2}Navegadores}{10}{section.abstract.2.2}
+\contentsline {section}{\numberline {2.3}HTML5}{11}{section.abstract.2.3}
+\contentsline {chapter}{\numberline {3}WebP}{13}{chapter.abstract.3}
+\contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{13}{section.abstract.3.1}
+\contentsline {section}{\numberline {3.2}Mozilla Firefox e o WebP}{13}{section.abstract.3.2}
+\contentsline {section}{\numberline {3.3}Especifica\IeC {\c c}\IeC {\~a}o do Container WebP}{14}{section.abstract.3.3}
+\contentsline {section}{\numberline {3.4}A API libwebp}{15}{section.abstract.3.4}
+\contentsline {chapter}{\numberline {4}Trabalhos Relacionados}{17}{chapter.abstract.4}
+\contentsline {section}{\numberline {4.1}JPEG 2000}{17}{section.abstract.4.1}
+\contentsline {section}{\numberline {4.2}JPEG XR}{18}{section.abstract.4.2}
+\contentsline {chapter}{\numberline {5}Proposta}{19}{chapter.abstract.5}
+\contentsline {section}{\numberline {5.1}Objetivos}{19}{section.abstract.5.1}
+\contentsline {section}{\numberline {5.2}Ambiente de Desenvolvimento}{20}{section.abstract.5.2}
+\contentsline {section}{\numberline {5.3}Projeto}{20}{section.abstract.5.3}
+\contentsline {section}{\numberline {5.4}Modelagem e Arquitetura}{20}{section.abstract.5.4}
+\contentsline {chapter}{\numberline {6}Coment\IeC {\'a}rios Finais}{21}{chapter.abstract.6}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{22}{chapter.abstract.6}

@@ -23,13 +23,19 @@
 \newcommand{\ingles}[1]{\textsl{#1}}
 \newcommand{\bibTeX}{bib\kern-.13ex\TeX}
 
-\chapter{Introdução}
+\begin{resumo}
+  Escrever o resumo
+\end{resumo}
 
-\begin{description}
+\begin{abstract}
+  Write the abstract
+\end{abstract}
+
+\chapter{Introdução}
 
 \section{Contextualização}
 
-\item \noindent Uma tecnologia importante da comunicação utilizada nos dias de hoje dentro da internet é a chamada WWW, ou \ingles{World Wide Web} onde usuários acessam páginas da \ingles{Web} escritas em uma linguagem específica definida por uma organização internacional (W3C), que é renderizada através de um software chamado de navegador. O usuário então pode ler as informações descritas ali e acessar os demais conteúdos da página através de seus hiperlinks de uma maneira fácil e intuitiva.
+Uma tecnologia importante da comunicação utilizada nos dias de hoje dentro da internet é a chamada WWW, ou \ingles{World Wide Web} onde usuários acessam páginas da \ingles{Web} escritas em uma linguagem específica definida por uma organização internacional (W3C), que é renderizada através de um software chamado de navegador. O usuário então pode ler as informações descritas ali e acessar os demais conteúdos da página através de seus hiperlinks de uma maneira fácil e intuitiva.
 
 Com a crescente evolução dos meios de comunicação, a necessidade de total interatividade do usuário com as páginas aumenta cada vez mais. Uma página da \ingles{Web} não é somente texto como era nos primórdios, ela é composta de uma série de diferentes atores como folhas de estilo, imagens e vídeos. Estes atores existem para aumentar a facilidade no uso e causar uma experiência mais agradável para o usuário final.
 
@@ -39,7 +45,7 @@ Recentemente a empresa estadunidense \ingles{Google Inc.} promoveu uma série de
 
 \section{Motivação}
 
-\item \noindent Os estudos mais recentes mostram que a capacidade de compressão do formato \ingles{WebP} tem cerca de 39\% de ganho quando comparado com JPEG e JPEG200, como pode-se observar na figura 1.1.
+Os estudos mais recentes mostram que a capacidade de compressão do formato \ingles{WebP} tem cerca de 39\% de ganho quando comparado com JPEG e JPEG200, como pode-se observar na figura 1.1.
 
 \begin{figure}[h]
   \centering
@@ -61,20 +67,16 @@ O aumento na capacidade de compressão do formato \ingles{WebP} trará de imedia
 
 \section{Objetivo}
 
-\item \noindent
 Com o objetivo de aumentar a disseminação do novo formato dentro da \ingles{Web}, a proposta é de habilitar o suporte de codificação e decodificação do formato WebP dentro do Mozilla Firefox. Embora a implementação do suporte ao \ingles{WebP} esteja somente disponível para dois navegadores (Chrome e Opera), estes constituem mais de 29\% de todos os navegadores utilizados dentro da internet hoje. A implementação do suporte ao \ingles{WebP} dentro do Mozilla Firefox aumentará este percentual para 52\%, já que cerca de 22\% dos navegadores utilizados hoje são Mozilla Firefox \cite{BrowserStats}.
 
 O objetivo deste trabalho não será a aceitação da implementação realizada dentro do código fonte no repositório oficial do Firefox. O objetivo é somente que a renderização nativa do formato WebP seja implementada dentro do navegador. O trabalho desenvolvido aqui poderá ser entregue à comunidade do Firefox, mas sua aplicação oficial na árvore da Mozilla não é o alvo principal. A proposta é a inclusão do suporte de codificação e decodificação ao \ingles{WebP} para o navegador Mozilla Firefox.
 
-\end{description}
+
 
 \chapter{Fundamentação Teórica}
 
-\begin{description}
-
 \section{A World Wide Web}
 
-\item \noindent
 A internet hoje em dia se fundamenta nos princípios da \ingles{World Wide Web} ou somente \ingles{Web} como é conhecida. Os usuários se conectam na rede mundial de computadores e utilizam as páginas da \ingles{Web} para realizar todo e qualquer tipo de ação dentro da rede, desde conversar com seus amigos e familiares até realizar compras em uma página de \ingles{e-commerce}.
 
 A \ingles{World Wide Web} foi inventada no CERN (Centro Europeu de Pesquisa Nuclear), com principal objetivo de servir como suporte para a consulta e comunicação interna dos projetos de pesquisa\cite{WebStory}. A idéia inicial era utilizar hipertextos, os quais funcionariam também como hiperlinks e fariam ligações para demais páginas contendo outro tipo de informação. Toda plataforma desenvolvida internamente dentro do CERN para a \ingles{Web} foi posteriormente disponibilizada ao domínio público, sem cobrança de royalties sob qualquer parte. Mais tarde Tim Berners-Lee, o fundador da \ingles{Web} dentro do CERN, criou a o \ingles{World Wide Web Consortium} com o intuito de definir padrões de utilização e interoperabilidade entre tecnologias dentro da rede. Conhecido também como W3C, é composto por funcionários de diversas empresas que trabalham em período integral para manter e evoluir os padrões especificados pela organização \cite{W3Cfacts}.
@@ -87,9 +89,8 @@ Com o advento da qualidade na comunicação da internet, as páginas da \ingles{
 
 A W3C trabalha em uma evolução da linguagem HTML mais preparada para este tipo de cenário, a chamada HTML5. Dentro da HTML5 existem vários detalhes em discussão e um dos mais importantes é a questão da forma como vídeo e imagem serão interpretados. O valor 5 da HTML vem por essa ser a quinta revisão completa da linguagem, que promete ser uma das maiores revisões feitas até hoje \cite{HTML5spec}.
 
-\section{Navegadores}
 
-\item \noindent 
+\section{Navegadores}
 
 Com a explosão do uso da \ingles{World Wide Web} na década de 90 \cite{BloombergGameChangers}, diversas grandes empresas da computação, como Microsoft, Google e Apple, investiram no desenvolvimento de novos softwares que possibilitassem aos usuários a busca de dados e informações que estivessem publicadas na Internet. Na computação, um navegador, também chamado de \ingles{Web Browser}, é um \ingles{software} com uma interface gráfica que possui como principal funcionalidade a apresentação de documentos virtuais da Internet, popularmente chamado de páginas da \ingles{Web}.
 
@@ -127,6 +128,7 @@ De acordo com as estatísticas de mercado apresentadas na Tabela 2.1, os navegad
 		\end{tabular}
 		}
 \end{table}
+
 A principal funcionalidade de um navegador é apresentar ao usuário o recurso da \ingles{Web} que ele escolher. Este  recurso geralmente é um documento em formato HTML, podendo ser também uma imagem, um arquivo PDF ou outro formato. A localização do recurso é especificada pelo usuário através de uma URL (\ingles{Uniform Resource Locator}), a qual é traduzida pelo navegador e utilizada para realizar a solicitação das informações para um servidor web e posteriormente, exibi-las em sua janela \cite{ArchitectureWebBrowsers}. Um exemplo deste fluxo é apresentado na Figura 2.1.
 
 \begin{figure}[h]
@@ -150,22 +152,16 @@ A concorrência existente entre as empresas e os produtos oferecidos atualmente,
 
 \section{HTML5}
 
-\item \noindent
 Em 1998 o W3C decidiu que eles não iriam mais continuar o desenvolvimento da linguagem da \ingles{Web} até então, a HTML \ingles{(HyperText Markup Language)}. Ao invés disto eles iriam trabalhar em um novo formato o qual acreditavam ser o futuro da \ingles{Web}, assim nasceu a linguagem XHTML \ingles{(Extensible HyperText Markup Language)} que se fundamentava nos princípios da XML \ingles{(Extensible Markup Language)}. Desta forma a revisão 4.01 da HTML foi congelada, e os esforços se direcionaram para a evolução da XHTML que em sua versão 2.0 trazia além de muitas mudanças revolucionárias, a quebra de toda compatibilidade das aplicações escritas nas versões anteriores da especificação.
 
 Muitos não gostaram desta nova iniciativa, em particular um grupo que trabalhava no desenvolvimento do navegador Opera. Estes indivíduos não se convenceram que o XML seria o futuro, e além de não adotar a XHTML, começaram a trabalhar na especificação de uma linguagem HTML extensiva que não quebrasse a compatibilidade das versões anteriores.  A especificação foi inicialmente chamada de \ingles{Web Forms} 2.0 e mais tarde foi nomeada para HTML5 por ser a quinta revisão da HTML \cite{HTML5Intro}. O W3C, então, começou a trabalhar na quinta revisão e apesar de não ter sido lançada nenhuma versão final da especificação, praticamente todos navegadores já implementam o suporte à nova definição da HTML.
 
 Uma das necessidades que a HTML5 deve suprir é o suporte para processamento de vídeo e som que nos dias de hoje se fundamenta no \ingles{plugin Aobe Flash}. Para esta implementação foi escolhido o formato WebM que possibilita aos navegadores renderizar nativamente vídeo e áudio sem a necessidade de \ingles{plugins} adicionais. O formato WebM é composto pelo método de compressão de vídeo VP8 e o padrão de áudio Vorbis. O WebP é parte integrante do WebM, porém, com foco voltado para compressão de imagens.
 
-\end{description}
-
 \chapter{WebP}
-
-\begin{description}
 
 \section{Introdução}
 
-\item \noindent
 O WebP é um novo formato de imagem que implementa compressão \ingles{lossless} e \ingles{lossy} para imagens na \ingles{Web}. Na computação a compressão \ingles{lossless} é aquela que permite a exata reconstrução de uma informação original a partir da informação comprimida, já a compressão \ingles{lossy} é aquela onde porções da informação original são descartadas (perdidas) para que haja efetivamente a compressão. Desta forma é a compressão \ingles{lossy} é utilizada para situações onde a integridade da informação não é exatamente necessária, como é o caso de imagens, vídeo e áudio. Utilizando uma técnica de compressão \ingles{lossless} o WebP consegue apresentar imagens 26\% menores no tamanho quando comparado com o formato PNG. Utilizando imagens com \ingles{lossy} os resultados são ainda melhores reduzindo de 25-34\% quando comparado com o formato JPEG. Ele também fornece suporte a transparência com apenas 22\% de \ingles{bytes} adicionais. O WebP utiliza uma metodologia semelhante aquela usada na compressão VP8 que faz parte do pacote WebM para o processamento de vídeo e áudio \cite{WebPLossyStudy}.
 
 A tecnologia por trás do WebP é fundamentada no conceito de \ingles{block prediction}. Cada bloco tem seu valor previsto baseando-se nos três blocos acima dele e no primeiro bloco a esquerda dele. Existem quatro métodos para previsão dos blocos, a horizontal, a vertical, a DC e a \ingles{TrueMotion}. As informações que foram previstas incorretamente e os blocos que não são previsíveis são comprimidos em um sub-bloco de 4x4 \ingles{pixels}. No final o resultado é comprimido utilizando \ingles{Entropy encoding} que é um método \ingles{lossless} amplamente usado para compressão de dados.
@@ -174,8 +170,6 @@ O suporte à codificação e decodificação do WebP está disponível nos naveg
 
 \section{Mozilla Firefox e o WebP}
 
-\item \noindent
-
 O formato WebP foi disponibilizado em 2010 mas nunca conseguiu ser integrado ao Mozilla Firefox. Inclusive na época um \ingles{bug} foi aberto dentro do \ingles{bugzilla} da Mozilla solicitando a implementação do formato WebP \cite{FirefoxBug}. Naquele tempo a equipe principal de desenvolvimento do Mozilla Firefox decidiu por não realizar a implementação em virtude de uma série de considerações contrárias ao formato WebP \cite{WebPCritica}. O time de desenvolvimento do WebP levou em conta as críticas que recebeu dos desenvolvedores do Mozilla Firefox e fez uma série de ajustes para suprir as necessidades que estavam sendo demandadas. Embora praticamente todos os apontamentos dados tenham sido ajustados, ainda não há uma clara razão do por que ele ainda não foi implementado. Em 2010 um \ingles{patch} rudimentar foi escrito e submetido por um membro da comunidade, mas não foi aceito. Existem também algumas extensões que fazem com que o Firefox consiga exibir imagens WebP, porem estas extensões não caracterizam um desenvolvimento adequado visto que elas dependem de plugins adicionais. A proposta é que o navegador seja capaz de realizar a renderização nativamente.
 
 Pelo que se pode averiguar, parece que há por trás disso uma razão política na não adoção do formato WebP até o presente momento. Apesar do Google ter aumentado os investimentos no desenvolvimento do Mozilla Firefox em 2011, o Google Chrome vem tomando espaço do Firefox na internet e há um temor de que a própria existência do Firefox esteja ameaçada graças ao grande sucesso do navegador concorrente. Entretanto pelo que foi pesquisado dentro da comunidade há alguma chance de que caso uma boa implementação seja feita, ela poderá ser aceita dentro do código oficial.
@@ -183,8 +177,6 @@ Pelo que se pode averiguar, parece que há por trás disso uma razão política 
 Nenhum trecho do \ingles{patch} enviado em 2010 através do \ingles{bug} aberto será aproveitado dentro deste trabalho, será necessário uma produção a partir do zero.
 
 \section{Especificação do Container WebP}
-
-\item \noindent
 
 Como um formato de imagem, o WebP utiliza um \ingles{container} RIFF (\ingles{Resource Interchange File Format}) para armazenamento das informações necessárias para utilização do formato dentro de um arquivo. O \ingles{container} do WebP também oferece como característica o suporte para a compressão \ingles{lossless} e o efeito de transparência que pode ser obtido através de um canal \ingles{alpha}. De forma geral o arquivo WebP é composto da imagem representada por uma matriz de \ingles{pixels} no formato VP8 e opcionalmente a informação em relação a transparência.
 
@@ -210,7 +202,6 @@ A diferença nos formatos simples com compressão \ingles{lossy} e \ingles{lossl
 
 \section{A API libwebp}
 
-\item \noindent
 A equipe de desenvolvimento do WebP mantém uma biblioteca chamada libwebp que oferece suporte para a criação de ferramentas para a manipulação do formato. No que tange a este trabalho serão utilizadas as bibliotecas para codificação e decodificação (encode.h e decode.h). Também será necessário utilizar a biblioteca que define os tipos básicos de variáveis e estruturas definidos pelo formato WebP (type.h).
 
 De acordo com a avaliação feita no código fonte e nas definições da biblioteca, as seguintes funções serão utilizadas para criação do decodificador:
@@ -237,13 +228,10 @@ As funções utilizadas para criação do codificador serão as seguintes:
 
 A documentação da biblioteca libwebp é bem simples e direta mas oferece diversos exemplos de utilização, o que a torna bem didática. Nos exemplos criados para este trabalho até o momento, não houve qualquer dificuldade com a utilização das funções e procedimentos definidos pela biblioteca. Os exemplos trabalhados foram a criação de decodificadores e codificadores rudimentares escritos em C++ para o formato WebP com o objetivo de entender melhor como funciona internamente a API. A utilização dela é peça fundamental para implementação do projeto.
 
-\end{description}
+
 
 \chapter{Trabalhos Relacionados}
 
-\begin{description}
-
-\item \noindent
 Os seguintes trabalhos estão relacionados com o tema proposto:
 
 \begin{itemize}
@@ -253,7 +241,9 @@ Os seguintes trabalhos estão relacionados com o tema proposto:
 \end{itemize}
 
 %\section{Biblioteca x264}
+
 \section{JPEG 2000}
+
 JPEG 2000 é um padrão de compressão de imagens, criado pela Joint Photographic Experts Group com o objetivo de ser amplamente utilizado em diversas áreas. Suas principais aplicações se deram em câmeras digitais, possibilitando imagens com resoluções maiores, de maior qualidade, utilizando uma compressão dessas informações em um arquivo fisicamente menor; na \ingles{Internet}; em impressões avançadas; em imagens médicas e outros setores chaves. O objetivo do JPEG 2000 não é apenas melhorar o desempenho de compressão em relação ao JPEG, mas adicionar (ou melhorar) características como escalabilidade e capacidade de edição.
 
 O formato JPEG 2000 trouxe alguns benefícios em relação ao JPEG, sendo eles:
@@ -270,6 +260,7 @@ A principal vantagem oferecida pelo formato JPEG 2000 é a flexibilidade no manu
 O JPEG 2000 foi publicado como um padrão ISO, ISO / IEC 15444. Atualmente o formato não é suportado em navegadores web e, portanto, não é geralmente utilizado na \ingles{Internet}.\cite{JPEG}
 
 \section{JPEG XR}
+
 O formato de imagem JPEG XR (abreviação para \ingles{JPEG extended range}) é um padrão de compressão de imagens desenvolvido e patenteado pela Microsoft sob o nome de HD Photo.
 Com a a popularidade do formato JPEG 2000 em baixa, devido à pouco suporte de aplicativos e falta de melhorias no formato, a Microsoft desenvolveu o JPEG XR, na qual se diz comparável com o JPEG 2000, e mais eficiente que o JPEG. Ao contrário do JPEG 2000, este novo formato proposto pela Microsoft é proprietário, ou seja, necessita de drivers e \ingles{plug-ins} específicos para codificação e decodificação das imagens em plataformas que ainda não possui suporte nativo.
 
@@ -284,14 +275,10 @@ O formato JPEG XR suporta a compressão de imagens com e sem perda de qualidade.
 
 Atualmente o JPEG XR é suportado por diversas aplicações Adobe Flash Player 11.0, Adobe AIR 3.0, Sumatra PDF 2.1, Windows Imaging Component, .NET Framework 3.0, Windows Vista, Windows 7, Windows 8, Internet Explorer 9, Internet Explorer 10, porém não é comumente utilizado em sites da \ingles{Internet}.\cite{HDPhoto}
 
-\end{description}
-
 \chapter{Proposta}
-\begin{description}
 
 \section{Objetivos}
 
-\item \noindent
 Conforme apresentado na seção 1.3, o objetivo deste trabalho visa contribuir com o desenvolvimento de uma solução para codificação e decodificação do formato de imagem WebP para o browser Mozilla Firefox. 
 Pretende-se, realizar em tempo de execução, a renderização de imagens do formato WebP através da utilização do Mozilla Firefox, possibilitanto que o navegador realize a leitura e exibição deste formato de imagem para o usuário. Inicialmente será realizado um estudo da biblioteca do formato WebP, na qual é disponibilizada pelo Google. 
 A motivação do desenvolvimento desta solução, conforme descrito na seção 1.2, se dá pelo fato de que o formato WebP já se encontrar em um estado avançado de desenvolvimento e maturidade, e já estar recebendo suporte nativo dos browsers Google Chrome e Opera. 
@@ -308,11 +295,11 @@ Pelo que se pode averiguar, parece que há por trás disso uma razão política 
 Analise da biblioteca, analise do \ingles{patch}, pontos de melhoria, nova solução, ferramentas utilizadas no desenvolvimento.
 
 \section{Projeto}
-\item \noindent
+
 Descrever Projeto
 
 \section{Modelagem e Arquitetura}
-\item \noindent
+
 A arquitetura de desenvolvimento do Mozilla Firefox permite a extensão de funcionalidades na renderização de imagens sem a necessidade de alteração de grandes porções de código já existente. É uma arquitetura bem modular e com baixo acoplamento, o que permite a fácil integração de novos componentes quando necessário. 
 
 De uma maneira geral, o núcleo a ser alterado para implementar a codificação e decodificação do formato WebP é a parte responsável pela inicialização das imagens (Image.h e Image.cpp) e pelo carregamento das imagens (ImageLoader.h e ImageLoader.cpp). Uma vez que o codificador e o decodificador estejam prontos, será necessário fazer alterações neste módulos para que o navegador possa nativamente manipular as imagens no formato WebP. Na figura 5.1 é possível ver um diagrama macro que mostra o nível de alteração necessária nos módulos de imagem e como eles se relacionam entre si.
@@ -325,17 +312,11 @@ De uma maneira geral, o núcleo a ser alterado para implementar a codificação 
 
 Também serão necessárias pequenas alterações em outros pontos como por exemplo a definição do \ingles{mime-type} para o formato WebP que deve ser acrescentado dentro do Firefox, mas estas não caracterizam mudança significativas de forma que a maior parte do trabalho será realizada em cima do núcleo de manipulação de imagens do navegador, conforme mostrado no diagrama dos componentes.
 
-\end{description}
-
 \chapter{Comentários Finais}
-\begin{description}
-\item \noindent
 
 A implementação da codificação e decodificação do formato WebP dentro do navegador Mozilla Firefox se faz possível conforme demonstrado pelo estudo feito na fundamentação teórica, no entendimento do formato propriamente dito e principalmente na descrição do projeto. Apesar de ter uma documentação bastante ampla, a falta de artigos científicos publicados prejudicou a composição das referências deste trabalho. Como a especificação do formato só foi feita e divulgada ao público em meados de 2010 após a compra da empresa On2 pelo Google, é possível que tenha havido pouco tempo para a criação de trabalhos acadêmicos relacionados ao WebP.
 
 Apesar da evolução constante realizada pele equipe de desenvolvimento, existem ainda diversos processos burocráticos pendentes que atrapalham no processo de adoção da tecnologia, como por exemplo o cadastramento do formato dentro de órgãos de registro da internet como a IANA (\ingles{Internet Assigned Numbers Authority}). Sabe-se que a adoção de um formato depende não somente da qualidade da tecnologia, mas sim da amplitude de sua utilização. Por este motivo o seu sucesso está diretamente associado à disseminação da tecnologia tanto por parte dos \ingles{softwares} de manipulação de imagens, quanto pelos navegadores de internet. O formato não pode se mostrar apenas eficiente do ponto de vista de infraestrutura, os desenvolvedores precisam achar atrativos e recursos interessantes para optarem por utilizar o WebP, e esse é um dos maiores desafios que os mantenedores oficiais do formato precisam resolver.
-
-\end{description}
 
 \bibliography{proposta}
 
