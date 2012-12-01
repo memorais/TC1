@@ -5,10 +5,10 @@
 \contentsline {section}{\numberline {1.3}Objetivo}{5}{section.1.3}
 \contentsline {chapter}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{6}{chapter.2}
 \contentsline {section}{\numberline {2.1}A World Wide Web}{6}{section.2.1}
-\contentsline {section}{\numberline {2.2}Os Web Browsers}{7}{section.2.2}
+\contentsline {section}{\numberline {2.2}Navegadores}{7}{section.2.2}
 \contentsline {section}{\numberline {2.3}HTML5}{8}{section.2.3}
 \contentsline {chapter}{\numberline {3}WebP}{10}{chapter.3}
-\contentsline {section}{\numberline {3.1}Contextualiza\IeC {\c c}\IeC {\~a}o}{10}{section.3.1}
+\contentsline {section}{\numberline {3.1}Introdu\IeC {\c c}\IeC {\~a}o}{10}{section.3.1}
 \contentsline {section}{\numberline {3.2}Mozilla Firefox e o WebP}{10}{section.3.2}
 \contentsline {section}{\numberline {3.3}Especifica\IeC {\c c}\IeC {\~a}o do Container WebP}{11}{section.3.3}
 \contentsline {section}{\numberline {3.4}A API libwebp}{12}{section.3.4}
