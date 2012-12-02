@@ -161,9 +161,27 @@ A concorrência existente entre as empresas e os produtos oferecidos atualmente,
 
 Em 1998 o W3C decidiu que eles não iriam mais continuar o desenvolvimento da linguagem da \ingles{Web} até então, a HTML \ingles{(HyperText Markup Language)}. Ao invés disto eles iriam trabalhar em um novo formato o qual acreditavam ser o futuro da \ingles{Web}, assim nasceu a linguagem XHTML \ingles{(Extensible HyperText Markup Language)} que se fundamentava nos princípios da XML \ingles{(Extensible Markup Language)}. Desta forma a revisão 4.01 da HTML foi congelada, e os esforços se direcionaram para a evolução da XHTML que em sua versão 2.0 trazia além de muitas mudanças revolucionárias, a quebra de toda compatibilidade das aplicações escritas nas versões anteriores da especificação.
 
-Muitos não gostaram desta nova iniciativa, em particular um grupo que trabalhava no desenvolvimento do navegador Opera. Estes indivíduos não se convenceram que o XML seria o futuro, e além de não adotar a XHTML, começaram a trabalhar na especificação de uma linguagem HTML extensiva que não quebrasse a compatibilidade das versões anteriores.  A especificação foi inicialmente chamada de \ingles{Web Forms} 2.0 e mais tarde foi nomeada para HTML5 por ser a quinta revisão da HTML \cite{HTML5Intro}. O W3C, então, começou a trabalhar na quinta revisão e apesar de não ter sido lançada nenhuma versão final da especificação, praticamente todos navegadores já implementam o suporte à nova definição da HTML.
+Muitos não gostaram desta nova iniciativa, em particular um grupo que trabalhava no desenvolvimento do navegador Opera. Estes indivíduos não se convenceram que o XML seria o futuro, e além de não adotar a XHTML, começaram a trabalhar na especificação de uma linguagem HTML extensiva que não quebrasse a compatibilidade das versões anteriores. Este grupo é conhecido como WHATWG (\ingles{Web Hypertext Application Technology Working Group}). A especificação foi inicialmente chamada de \ingles{Web Forms} 2.0 e mais tarde foi nomeada para HTML5 por ser a quinta revisão da HTML \cite{HTML5Intro}. O W3C, então, adotou a versão do grupo WHATWG como base para a nova versão do HTML e começou a trabalhar na quinta revisão, e apesar de não ter sido lançada nenhuma versão final da especificação, praticamente todos navegadores já implementam o suporte à nova definição da HTML. Este processo de desenvolvimento da nova versão passou a ser desenvolvida simultaneamente, pelo W3C e o grupo WHATWG.
 
-Uma das necessidades que a HTML5 deve suprir é o suporte para processamento de vídeo e som que nos dias de hoje se fundamenta no \ingles{plugin Aobe Flash}. Para esta implementação foi escolhido o formato WebM que possibilita aos navegadores renderizar nativamente vídeo e áudio sem a necessidade de \ingles{plugins} adicionais. O formato WebM é composto pelo método de compressão de vídeo VP8 e o padrão de áudio Vorbis. O WebP é parte integrante do WebM, porém, com foco voltado para compressão de imagens.
+Por trás do HTML5 há uma série de princípios de design definidos. De uma forma resumida, pode-se citar três principais principios\cite{HTML5Intro}:
+\begin{itemize}
+		\item Interoperabilidade entre os navegadores - Possuir o mesmo comportamento em todos os navegadores, independente de plataforma e tecnologia;
+		\item Definição de tratamento de erros - Maneira que os navegadores devem reagir à marcações inválidas;
+		\item Evoluir a linguagem para facilitar a criação de conteúdo \ingles{Web}.
+\end{itemize}
+
+O HTML5 possui como paradigma ser "livre" de \ingles{plugins}, que são considerados atualmente como os vilões dos navegadores. Os \ingles{plugins}, apesar de adicionar novos elementos e componentes ao navegador, trazem consigo uma série de problemas:
+
+\begin{itemize}
+		\item \ingles{Plugins} nem sempre podem ser instalados;
+		\item \ingles{Plugins} podem ser desativados ou bloqueados;
+		\item \ingles{Plugins} comprometem a segurança e são alvos de ataques;
+		\item \ingles{Plugins} são difíceis de integrar ao resto do conteúdo HTML.
+\end{itemize}
+
+Os \ingles{plugins} muitas vezes também apresentam dificuldades de integrar seus recursos com o resto do conteúdo exibido pelo navegador, o que acarreta em problemas na renderização do documento. Isto ocorre porque os plugins utilizam um modelo de processamento à parte do qual é utilizado para a página \ingles{Web}. Neste ponto que o HTML5 propões melhorias, trazendo estes recursos de forma nativa na linguagem. Ao invés de utilizar elementos de estilo no formato CSS e \ingles{scripts} com JavaScript, o HTML5 apresenta recursos que não existiam nas versões anteriores. Não são apenas novos elementos que fornecem novas funcionalidades, mas a interação nativa com \ingles{scripts} e estilos que possibilita fazer muito mais do que antes.
+
+Uma das necessidades que a HTML5 deve suprir é o suporte para processamento de vídeo e som que nos dias de hoje se fundamenta no \ingles{plugin Aobe Flash}. Para esta implementação foi escolhido o formato WebM que possibilita aos navegadores renderizar nativamente vídeo e áudio sem a necessidade de instalações adicionais. O formato WebM é composto pelo método de compressão de vídeo VP8 e o padrão de áudio Vorbis. O WebP é parte integrante do WebM, porém, com foco voltado para compressão de imagens.
 
 \chapter{WebP}
 
