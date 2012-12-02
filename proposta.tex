@@ -298,12 +298,9 @@ No ano de 2010 um \ingles{patch} rudimentar foi escrito e submetido por um membr
 
 Pelo que se pode averiguar, parece que há por trás disso uma razão política na não adoção do formato WebP até o presente momento. Apesar do Google ter aumentado os investimentos no desenvolvimento do Mozilla Firefox em 2011, o Google Chrome vem tomando espaço do Firefox na internet e há um temor de que a própria existência do Firefox esteja ameaçada graças ao grande sucesso do navegador concorrente. Entretanto pelo que foi pesquisado dentro da comunidade há alguma chance de que caso uma boa implementação seja feita, ela poderá ser aceita dentro do código oficial.
 
-\section{Ambiente de Desenvolvimento}
-Analise da biblioteca, analise do \ingles{patch}, pontos de melhoria, nova solução, ferramentas utilizadas no desenvolvimento.
-
 \section{Projeto}
 
-Visando atinigir os objetivos descritos para este trabalho, foi criado o seguinte cronograma de atividades a ser seguido na disciplina de Trabalho de Conclusão I:
+Visando atingir os objetivos descritos para este trabalho, foi criado o seguinte cronograma de atividades a ser seguido na disciplina de Trabalho de Conclusão I:
 \begin{enumerate}
 	\item Estudo do formato WebP e da biblioteca libwebp;
 	\item Estudo e análise do código do Mozilla Firefox;
@@ -318,6 +315,39 @@ Visando atinigir os objetivos descritos para este trabalho, foi criado o seguint
     \includegraphics[scale=0.6]{scheduler.png}
   \caption{Cronograma de atividades}
 \end{figure}
+
+O planejamento futuro para implementação vislumbra a criação de um \ingles{fork} a partir do projeto atual disponível na árvore oficial do Firefox. O trabalho então será feito em cima deste projeto separado para evitar que as atualizações constantes dos mantenedores atrapalhe o desenvolvimento que será realizado.
+
+\section{Ambiente de Desenvolvimento}
+
+As principais ferramentas utilizadas para o desenvolvimento deste trabalho estão listadas na tabela 5.1.
+
+\begin{table}[ht]
+	\centering
+	\caption{Ferramentas utilizadas para o desenvolvimento do trabalho.
+	\label{tbl:padc}}{
+		\vspace{0.3cm}
+		\begin{tabular}{|l|p{14cm}|}
+	    	\hline
+			\textbf{Ferramenta} & \textbf{Descrição} \\
+			\hline
+			LaTeX		& Conjunto de macros para processamento de texto. Está sendo utilizado para criação de todo material textual. \\
+			\hline
+			GIT		& Ferramenta utilizada para controle versão distribuída. \\
+			\hline
+			AbnTeX		& Biblioteca LaTeX para processamento de texto utilizando as normas da ABNT. \\
+			\hline
+			BibTeX		& Ferramenta utilizada para gerenciamento das referências descritas na documentação. \\
+			\hline
+			VIM		& Editor de texto. \\
+			\hline
+			Bash		& Interpretador de comandos que está sendo utilizado para compilação e geração da documentação através de \ingles{scripts}. \\
+			\hline
+			DIA		& Ferramenta utilizada para o desenho de diagramas. \\
+			\hline
+		\end{tabular}
+		}
+\end{table}
 
 \section{Modelagem e Arquitetura}
 
