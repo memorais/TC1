@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  2 DEC 2012 01:45
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  2 DEC 2012 02:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -819,13 +819,17 @@ Overfull \hbox (0.79626pt too wide) in paragraph at lines 104--105
 i-li-zado na hist[]oria e teve uma evolu[][]ao
  []
 
-[13] <web_basic.png, id=263, 372.39125pt x 159.59625pt>
+[13] <web_basic.png, id=263, 462.72874pt x 169.63374pt>
 File: web_basic.png Graphic file (type png)
  <use web_basic.png>
 Package pdftex.def Info: web_basic.png used on input line 143.
-(pdftex.def)             Requested size: 372.39034pt x 159.59584pt.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 151.
+(pdftex.def)             Requested size: 462.72762pt x 169.63332pt.
 
+Overfull \hbox (7.4835pt too wide) in paragraph at lines 143--144
+ [][] 
+ []
+
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 151.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
@@ -836,14 +840,14 @@ LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
 Cap\'{\i }tulo 3.
 [16
 
-] [17] [18] <LossyLossLessExtended.png, id=308, 598.235pt x 529.98pt>
+] [17] [18] <LossyLossLessExtended.png, id=307, 598.235pt x 529.98pt>
 File: LossyLossLessExtended.png Graphic file (type png)
 
 <use LossyLossLessExtended.png>
 Package pdftex.def Info: LossyLossLessExtended.png used on input line 198.
 (pdftex.def)             Requested size: 299.11676pt x 264.98933pt.
 
-<AlphaChunk.png, id=309, 593.21625pt x 133.49875pt>
+<AlphaChunk.png, id=308, 593.21625pt x 133.49875pt>
 File: AlphaChunk.png Graphic file (type png)
  <use AlphaChunk.png>
 Package pdftex.def Info: AlphaChunk.png used on input line 206.
@@ -861,7 +865,7 @@ LaTeX Warning: Citation `HDPhoto' on page 22 undefined on input line 283.
 Cap\'{\i }tulo 5.
 [23
 
-] <scheduler.png, id=333, 768.8725pt x 173.64874pt>
+] <scheduler.png, id=332, 768.8725pt x 173.64874pt>
 File: scheduler.png Graphic file (type png)
  <use scheduler.png>
 Package pdftex.def Info: scheduler.png used on input line 318.
@@ -877,7 +881,7 @@ Overfull \hbox (5.58447pt too wide) in paragraph at lines 326--327
 le-men-tar a codifica[][]ao e decodifica[][]ao
  []
 
-<Arquitetura.png, id=346, 975.645pt x 406.51875pt>
+<Arquitetura.png, id=345, 975.645pt x 406.51875pt>
 File: Arquitetura.png Graphic file (type png)
  <use Arquitetura.png>
 Package pdftex.def Info: Arquitetura.png used on input line 330.
@@ -927,9 +931,9 @@ texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on proposta.pdf (28 pages, 284038 bytes).
+Output written on proposta.pdf (28 pages, 335469 bytes).
 PDF statistics:
- 420 PDF objects out of 1000 (max. 8388607)
+ 419 PDF objects out of 1000 (max. 8388607)
  364 compressed objects within 4 object streams
  78 named destinations out of 1000 (max. 500000)
  236 words of extra memory for PDF output out of 10000 (max. 10000000)
