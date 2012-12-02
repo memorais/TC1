@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  1 DEC 2012 21:49
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  1 DEC 2012 22:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -608,27 +608,27 @@ Package: placeins 2005/04/18  v 2.2
 (./proposta.aux)
 \openout1 = `proposta.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 18.
-LaTeX Font Info:    ... okay on input line 18.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 18.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 20.
+LaTeX Font Info:    ... okay on input line 20.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 20.
  (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 \big@size=\dimen119
 \AtBeginShipoutBox=\box52
-Package hyperref Info: Link coloring OFF on input line 18.
+Package hyperref Info: Link coloring OFF on input line 20.
  (/usr/local/texlive/2012/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
 
@@ -637,9 +637,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count114
 )
-LaTeX Info: Redefining \ref on input line 18.
-LaTeX Info: Redefining \pageref on input line 18.
-LaTeX Info: Redefining \nameref on input line 18.
+LaTeX Info: Redefining \ref on input line 20.
+LaTeX Info: Redefining \pageref on input line 20.
+LaTeX Info: Redefining \nameref on input line 20.
 
 (./proposta.out) (./proposta.out)
 \@outlinefile=\write3
@@ -675,41 +675,41 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
-LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 19
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 22
 .
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
 File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 19
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 22
 .
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omlztmcm.fd
 File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 19
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 22
 .
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsztmcm.fd
 File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 19
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 22
 .
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omxztmcm.fd
 File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 22.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20.74> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 19.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 22.
  [0
 
 {/usr/local/texlive/2012/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]pdfTeX w
@@ -717,12 +717,12 @@ arning (ext4): destination with the same identifier (name{page.}) has been alre
 ady used, duplicate ignored
 <to be read again> 
                    \relax 
-l.20 \folhaderosto
+l.23 \folhaderosto
                    [1]
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 21.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 24.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24.88> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 21.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 24.
  (./proposta.toc
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/it' tried instead on input line 2.
@@ -730,7 +730,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 ... {\'a}rios Finais}{21}{chapter.abstract.6}
+l.25 ...ne {5.3}Projeto}{24}{section.abstract.5.3}
                                                    [2
 
 ])
@@ -741,129 +741,154 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.21 \sumario
-              [3]pdfTeX warning (ext4): destination with the same identifier (n
-ame{page.}) has been already used, duplicate ignored
+l.24 \sumario
+              [3] (./proposta.lof)
+\tf@lof=\write5
+\openout5 = `proposta.lof'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.28 \end{resumo}
-                  [4
+l.26 \listoftables
+                   [4
 
+
+] (./proposta.lot)
+\tf@lot=\write6
+\openout6 = `proposta.lot'.
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
+een already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.31 \begin{resumo}
+                    [5
+
+]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
+been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.33 \end{resumo}
+                  [6
 
 
 ]pdfTeX warning (ext4): destination with the same identifier (name{page.}) has 
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.32 \end{abstract}
-                    [5
+l.37 \end{abstract}
+                    [7
 
 
 ]
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 37.
-[6
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 43.
+[8
 
-] <Plot3_cdfcompr.png, id=164, 950.55125pt x 562.1pt>
+] <Plot3_cdfcompr.png, id=209, 950.55125pt x 562.1pt>
 File: Plot3_cdfcompr.png Graphic file (type png)
 
 <use Plot3_cdfcompr.png>
-Package pdftex.def Info: Plot3_cdfcompr.png used on input line 53.
+Package pdftex.def Info: Plot3_cdfcompr.png used on input line 59.
 (pdftex.def)             Requested size: 380.21376pt x 224.83601pt.
- <BrowserCounter.png, id=172, 602.25pt x 602.25pt>
+ <BrowserCounter.png, id=217, 602.25pt x 602.25pt>
 File: BrowserCounter.png Graphic file (type png)
 
 <use BrowserCounter.png>
-Package pdftex.def Info: BrowserCounter.png used on input line 61.
+Package pdftex.def Info: BrowserCounter.png used on input line 67.
 (pdftex.def)             Requested size: 301.12425pt x 301.12425pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./Plot3_cdfcompr.png>] [8 <./BrowserCounter.png>]
+[9 <./Plot3_cdfcompr.png>] [10 <./BrowserCounter.png>] [11]
 Cap\'{\i }tulo 2.
-[9
+[12
 
 ]
-Overfull \hbox (0.79626pt too wide) in paragraph at lines 98--99
+Overfull \hbox (0.79626pt too wide) in paragraph at lines 104--105
 []\OT1/ptm/m/n/12 O na-ve-ga-dor []e, tal-vez, o soft-ware mais am-pla-mente ut
 i-li-zado na hist[]oria e teve uma evolu[][]ao
  []
 
-[10] <web_basic.png, id=224, 372.39125pt x 159.59625pt>
+[13] <web_basic.png, id=269, 372.39125pt x 159.59625pt>
 File: web_basic.png Graphic file (type png)
  <use web_basic.png>
-Package pdftex.def Info: web_basic.png used on input line 137.
+Package pdftex.def Info: web_basic.png used on input line 143.
 (pdftex.def)             Requested size: 372.39034pt x 159.59584pt.
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 145.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 151.
 
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 145.
- [11 <./web_basic.png>] [12]
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
+ [14 <./web_basic.png>] [15]
 Cap\'{\i }tulo 3.
-[13
+[16
 
-] [14] <LossyLossLessExtended.png, id=265, 598.235pt x 529.98pt>
+] [17] [18] <LossyLossLessExtended.png, id=314, 598.235pt x 529.98pt>
 File: LossyLossLessExtended.png Graphic file (type png)
 
 <use LossyLossLessExtended.png>
-Package pdftex.def Info: LossyLossLessExtended.png used on input line 192.
+Package pdftex.def Info: LossyLossLessExtended.png used on input line 198.
 (pdftex.def)             Requested size: 299.11676pt x 264.98933pt.
 
-<AlphaChunk.png, id=266, 593.21625pt x 133.49875pt>
+<AlphaChunk.png, id=315, 593.21625pt x 133.49875pt>
 File: AlphaChunk.png Graphic file (type png)
  <use AlphaChunk.png>
-Package pdftex.def Info: AlphaChunk.png used on input line 200.
+Package pdftex.def Info: AlphaChunk.png used on input line 206.
 (pdftex.def)             Requested size: 237.28229pt x 53.39854pt.
 
-[15 <./LossyLossLessExtended.png> <./AlphaChunk.png>] [16]
+[19 <./LossyLossLessExtended.png> <./AlphaChunk.png>] [20]
 Cap\'{\i }tulo 4.
-[17
+[21
 
 ]
 
-LaTeX Warning: Citation `HDPhoto' on page 18 undefined on input line 277.
+LaTeX Warning: Citation `HDPhoto' on page 22 undefined on input line 283.
 
-[18]
+[22]
 Cap\'{\i }tulo 5.
-[19
+[23
 
 ]
-Overfull \hbox (5.58447pt too wide) in paragraph at lines 306--307
+Overfull \hbox (5.58447pt too wide) in paragraph at lines 312--313
 []\OT1/ptm/m/n/12 De uma ma-neira ge-ral, o n[]ucleo a ser al-te-rado para im-p
 le-men-tar a codifica[][]ao e decodifica[][]ao
  []
 
-<Arquitetura.png, id=294, 975.645pt x 406.51875pt>
+<Arquitetura.png, id=339, 975.645pt x 406.51875pt>
 File: Arquitetura.png Graphic file (type png)
  <use Arquitetura.png>
-Package pdftex.def Info: Arquitetura.png used on input line 310.
+Package pdftex.def Info: Arquitetura.png used on input line 316.
 (pdftex.def)             Requested size: 439.0362pt x 182.93173pt.
 
-[20 <./Arquitetura.png>]
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[24] [25 <./Arquitetura.png>]
 Cap\'{\i }tulo 6.
-(./proposta.bbl [21
+(./proposta.bbl [26
 
 ])
 +-------------------------------------------------------------------+
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 324.
-[22
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 330.
+[27
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 324.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 330.
  (./proposta.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 324.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 324.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 330.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 330.
 Package rerunfilecheck Info: File `proposta.out' has not changed.
-(rerunfilecheck)             Checksum: D188B2754D537E6644F08C6CEA0395BA;1816.
+(rerunfilecheck)             Checksum: 66ECDAB3245CBE6CB3717F7F62BD631B;1922.
 
 
 LaTeX Warning: There were undefined references.
@@ -871,16 +896,16 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 324.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 330.
  ) 
 Here is how much of TeX's memory you used:
- 6849 strings out of 493488
- 103594 string characters out of 3141326
- 198840 words of memory out of 3000000
- 9923 multiletter control sequences out of 15000+200000
+ 6862 strings out of 493488
+ 103721 string characters out of 3141326
+ 197841 words of memory out of 3000000
+ 9925 multiletter control sequences out of 15000+200000
  32512 words of font info for 61 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
- 30i,10n,41p,1233b,530s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 30i,10n,41p,1233b,484s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/local/texlive/2012/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/te
 xlive/2012/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
@@ -889,10 +914,10 @@ texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on proposta.pdf (23 pages, 258099 bytes).
+Output written on proposta.pdf (28 pages, 261599 bytes).
 PDF statistics:
- 366 PDF objects out of 1000 (max. 8388607)
- 317 compressed objects within 4 object streams
- 66 named destinations out of 1000 (max. 500000)
- 231 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 416 PDF objects out of 1000 (max. 8388607)
+ 362 compressed objects within 4 object streams
+ 71 named destinations out of 1000 (max. 500000)
+ 247 words of extra memory for PDF output out of 10000 (max. 10000000)
 
