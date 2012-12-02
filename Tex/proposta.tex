@@ -21,9 +21,10 @@
 
 \capa
 \folhaderosto
-\sumario
 \listoffigures
 \listoftables
+
+\sumario
 
 \newcommand{\ingles}[1]{\textsl{#1}}
 \newcommand{\bibTeX}{bib\kern-.13ex\TeX}
@@ -76,8 +77,7 @@ O aumento na capacidade de compressão do formato \ingles{WebP} trará de imedia
 
 Com o objetivo de aumentar a disseminação do novo formato dentro da \ingles{Web}, a proposta é de habilitar o suporte de codificação e decodificação do formato WebP dentro do Mozilla Firefox. Embora a implementação do suporte ao \ingles{WebP} esteja somente disponível para dois navegadores (Chrome e Opera), estes constituem mais de 29\% de todos os navegadores utilizados dentro da internet hoje. A implementação do suporte ao \ingles{WebP} dentro do Mozilla Firefox aumentará este percentual para 52\%, já que cerca de 22\% dos navegadores utilizados hoje são Mozilla Firefox \cite{BrowserStats}.
 
-O objetivo deste trabalho não será a aceitação da implementação realizada dentro do código fonte no repositório oficial do Firefox. O objetivo é somente que a renderização nativa do formato WebP seja implementada dentro do navegador. O trabalho desenvolvido aqui poderá ser entregue à comunidade do Firefox, mas sua aplicação oficial na árvore da Mozilla não é o alvo principal. A proposta é a inclusão do suporte de codificação e decodificação ao \ingles{WebP} para o navegador Mozilla Firefox.
-
+O objetivo deste trabalho não visa a aceitação por parte da equipe do Mozilla, em integrar a implementação desenvolvida ao código fonte do repositório oficial do Firefox. O objetivo é somente contribuir no desenvolvimento para que a renderização nativa do formato WebP seja implementada dentro do navegador. O trabalho desenvolvido poderá ser entregue à comunidade do Firefox, mas sua aplicação oficial na árvore da Mozilla não é o alvo principal. A proposta é a inclusão do suporte à codificação e decodificação do formato de imagem \ingles{WebP} no navegador Mozilla Firefox.
 
 
 \chapter{Fundamentação Teórica}
@@ -169,11 +169,11 @@ Uma das necessidades que a HTML5 deve suprir é o suporte para processamento de 
 
 \section{Introdução}
 
-O WebP é um novo formato de imagem que implementa compressão \ingles{lossless} e \ingles{lossy} para imagens na \ingles{Web}. Na computação a compressão \ingles{lossless} é aquela que permite a exata reconstrução de uma informação original a partir da informação comprimida, já a compressão \ingles{lossy} é aquela onde porções da informação original são descartadas (perdidas) para que haja efetivamente a compressão. Desta forma é a compressão \ingles{lossy} é utilizada para situações onde a integridade da informação não é exatamente necessária, como é o caso de imagens, vídeo e áudio. Utilizando uma técnica de compressão \ingles{lossless} o WebP consegue apresentar imagens 26\% menores no tamanho quando comparado com o formato PNG. Utilizando imagens com \ingles{lossy} os resultados são ainda melhores reduzindo de 25-34\% quando comparado com o formato JPEG. Ele também fornece suporte a transparência com apenas 22\% de \ingles{bytes} adicionais. O WebP utiliza uma metodologia semelhante aquela usada na compressão VP8 que faz parte do pacote WebM para o processamento de vídeo e áudio \cite{WebPLossyStudy}.
+O WebP é um novo formato de imagem que implementa compressão \ingles{lossless} e \ingles{lossy} para imagens na \ingles{Web}. Na computação a compressão \ingles{lossless} é aquela que permite a exata reconstrução de uma informação original a partir da informação comprimida, já a compressão \ingles{lossy} é aquela onde porções da informação original são descartadas (perdidas) para que haja efetivamente a compressão. Desta forma, a compressão \ingles{lossy} é utilizada para situações onde a integridade da informação não é exatamente necessária, como é o caso de imagens, vídeo e áudio. Utilizando uma técnica de compressão \ingles{lossless} o WebP consegue apresentar imagens 26\% menores no tamanho quando comparado com o formato PNG. Utilizando imagens com \ingles{lossy} os resultados são ainda melhores, reduz de 25 a 34\% o tamanho da imagem quando comparado com o formato JPEG. Ele também fornece suporte à transparência com apenas 22\% de \ingles{bytes} adicionais. O WebP utiliza uma metodologia semelhante aquela usada na compressão VP8 que faz parte do pacote WebM para o processamento de vídeo e áudio \cite{WebPLossyStudy}.
 
-A tecnologia por trás do WebP é fundamentada no conceito de \ingles{block prediction}. Cada bloco tem seu valor previsto baseando-se nos três blocos acima dele e no primeiro bloco a esquerda dele. Existem quatro métodos para previsão dos blocos, a horizontal, a vertical, a DC e a \ingles{TrueMotion}. As informações que foram previstas incorretamente e os blocos que não são previsíveis são comprimidos em um sub-bloco de 4x4 \ingles{pixels}. No final o resultado é comprimido utilizando \ingles{Entropy encoding} que é um método \ingles{lossless} amplamente usado para compressão de dados.
+A tecnologia por trás do WebP é fundamentada no conceito de \ingles{block prediction}. Cada bloco tem seu valor previsto baseando-se nos três blocos acima dele e no primeiro bloco a esquerda dele. Existem quatro métodos para previsão dos blocos, a horizontal, a vertical, a DC e a \ingles{TrueMotion}. As informações que foram previstas incorretamente e os blocos que não são previsíveis são comprimidos em um sub-bloco de 4x4 \ingles{pixels}. No final o resultado é comprimido utilizando \ingles{Entropy encoding}, que é um método \ingles{lossless} amplamente usado para compressão de dados.
 
-O suporte à codificação e decodificação do WebP está disponível nos navegadores Google Chrome e Opera. Como o Mozilla Firefox já possui suporte ao WebM, alguma parte do código para a implementação do WebP já reside dentro do navegador uma vez que tanto WebP quanto VP8 utilizam a mesma técnica para a compressão de imagens pois, no caso do vídeo o mesmo conceito é utilizado para compressão do \ingles{frames}.
+O suporte à codificação e decodificação do WebP está disponível nos navegadores Google Chrome e Opera. Como o Mozilla Firefox já possui suporte ao WebM, alguma parte do código para a implementação do WebP já reside dentro do navegador uma vez que tanto WebP quanto VP8 utilizam a mesma técnica para a compressão de imagens pois, no caso de vídeo, o mesmo conceito é utilizado para compressão dos \ingles{frames}.
 
 \section{Mozilla Firefox e o WebP}
 
@@ -303,7 +303,21 @@ Analise da biblioteca, analise do \ingles{patch}, pontos de melhoria, nova solu�
 
 \section{Projeto}
 
-Descrever Projeto
+Visando atinigir os objetivos descritos para este trabalho, foi criado o seguinte cronograma de atividades a ser seguido na disciplina de Trabalho de Conclusão I:
+\begin{enumerate}
+	\item Estudo do formato WebP e da biblioteca libwebp;
+	\item Estudo e análise do código do Mozilla Firefox;
+	\item Estudo dos padrões de codificação do Mozilla Firefox;
+	\item Estudo da viabilidade de implementação;
+	\item Estudo do patch proposto em 2010;
+	\item Desenvolvimento da primeira parte da documentação para o trabalho final.
+\end{enumerate}
+
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.6]{scheduler.png}
+  \caption{Cronograma de atividades}
+\end{figure}
 
 \section{Modelagem e Arquitetura}
 

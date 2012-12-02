@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2012/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2012)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: proposta.aux
 The style file: abnt-alf.bst
@@ -23,50 +23,50 @@ Reallocated glb_str_ptr (elt_size=4) to 20 items from 10.
 Reallocated global_strs (elt_size=20001) to 20 items from 10.
 Reallocated glb_str_end (elt_size=4) to 20 items from 10.
 +---------------------------------------------------------+
-| Estilo bibliografico abnt-alf.bst versao 1.53           |
+| Estilo bibliografico abnt-alf.bst versao 1.52           |
 | Implementa a NBR6023, NBR10520 e NBR10523               |
 | Em caso de duvidas ou problemas com este estilo procure |
 | http://abntex.codigolivre.org.br                        |
 +---------------------------------------------------------+
 You've used 18 entries,
-            6522 wiz_defined-function locations,
+            6523 wiz_defined-function locations,
             1254 strings with 11237 characters,
-and the built_in function-call counts, 39584 in all, are:
-= -- 6138
+and the built_in function-call counts, 39362 in all, are:
+= -- 6134
 > -- 277
 < -- 1112
 + -- 1275
 - -- 90
-* -- 1763
-:= -- 3868
+* -- 1759
+:= -- 3863
 add.period$ -- 64
 call.type$ -- 19
 change.case$ -- 125
 chr.to.int$ -- 18
 cite$ -- 16
-duplicate$ -- 5593
-empty$ -- 967
+duplicate$ -- 5565
+empty$ -- 934
 format.name$ -- 417
-if$ -- 7874
+if$ -- 7809
 int.to.chr$ -- 3
 int.to.str$ -- 0
-missing$ -- 293
+missing$ -- 279
 newline$ -- 97
 num.names$ -- 75
-pop$ -- 501
+pop$ -- 487
 preamble$ -- 1
 purify$ -- 57
 quote$ -- 0
-skip$ -- 5836
+skip$ -- 5822
 stack$ -- 1
-substring$ -- 1461
-swap$ -- 1256
+substring$ -- 1449
+swap$ -- 1228
 text.length$ -- 23
 text.prefix$ -- 0
 top$ -- 0
 type$ -- 10
 warning$ -- 0
-while$ -- 117
+while$ -- 116
 width$ -- 0
 write$ -- 237
 (There were 3 warnings)

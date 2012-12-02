@@ -1,6 +1,4 @@
 \select@language {brazil}
-\contentsline {chapter}{Lista de Figuras}{}{chapter*.1}
-\contentsline {chapter}{Lista de Tabelas}{}{chapter*.2}
 \contentsline {chapter}{Resumo}{}{chapter*.3}
 \contentsline {chapter}{Abstract}{}{chapter*.4}
 \contentsline {chapter}{\numberline {1}Introdu\IeC {\c c}\IeC {\~a}o}{8}{chapter.abstract.1}
@@ -23,6 +21,6 @@
 \contentsline {section}{\numberline {5.1}Objetivos}{23}{section.abstract.5.1}
 \contentsline {section}{\numberline {5.2}Ambiente de Desenvolvimento}{24}{section.abstract.5.2}
 \contentsline {section}{\numberline {5.3}Projeto}{24}{section.abstract.5.3}
-\contentsline {section}{\numberline {5.4}Modelagem e Arquitetura}{24}{section.abstract.5.4}
+\contentsline {section}{\numberline {5.4}Modelagem e Arquitetura}{25}{section.abstract.5.4}
 \contentsline {chapter}{\numberline {6}Coment\IeC {\'a}rios Finais}{26}{chapter.abstract.6}
 \contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{27}{chapter.abstract.6}
