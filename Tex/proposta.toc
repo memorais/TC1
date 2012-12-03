@@ -5,6 +5,7 @@
 \contentsline {section}{\numberline {1.1}Contextualiza\IeC {\c c}\IeC {\~a}o}{8}{section.abstract.1.1}
 \contentsline {section}{\numberline {1.2}Motiva\IeC {\c c}\IeC {\~a}o}{9}{section.abstract.1.2}
 \contentsline {section}{\numberline {1.3}Objetivo}{10}{section.abstract.1.3}
+\contentsline {section}{\numberline {1.4}Organiza\IeC {\c c}\IeC {\~a}o do Texto}{11}{section.abstract.1.4}
 \contentsline {chapter}{\numberline {2}Fundamenta\IeC {\c c}\IeC {\~a}o Te\IeC {\'o}rica}{12}{chapter.abstract.2}
 \contentsline {section}{\numberline {2.1}A World Wide Web}{12}{section.abstract.2.1}
 \contentsline {section}{\numberline {2.2}Navegadores}{13}{section.abstract.2.2}

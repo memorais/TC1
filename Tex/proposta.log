@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  3 DEC 2012 21:17
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012) (format=pdflatex 2012.6.30)  3 DEC 2012 21:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -757,7 +757,7 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
 een already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.25 ... {\'a}rios Finais}{28}{chapter.abstract.6}
+l.26 ... {\'a}rios Finais}{28}{chapter.abstract.6}
                                                    [4
 
 ])
@@ -772,7 +772,7 @@ l.27 \sumario
               [5]
 Overfull \hbox (4.31537pt too wide) in paragraph at lines 33--34
 \OT1/ptm/m/n/12 for-mato WebP e fi-nal-mente a pro-posta para execu[][]ao do tr
-a-ba-lho. Ao fi-nal exis-tem considera[][]oes
+a-ba-lho. No fi-nal exis-tem considera[][]oes
  []
 
 pdfTeX warning (ext4): destination with the same identifier (name{page.}) has b
@@ -798,13 +798,13 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17.28> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 44.
 [8
 
-] <Plot3_cdfcompr.png, id=203, 950.55125pt x 562.1pt>
+] <Plot3_cdfcompr.png, id=208, 950.55125pt x 562.1pt>
 File: Plot3_cdfcompr.png Graphic file (type png)
 
 <use Plot3_cdfcompr.png>
 Package pdftex.def Info: Plot3_cdfcompr.png used on input line 60.
 (pdftex.def)             Requested size: 380.21376pt x 224.83601pt.
- <BrowserCounter.png, id=211, 602.25pt x 602.25pt>
+ <BrowserCounter.png, id=216, 602.25pt x 602.25pt>
 File: BrowserCounter.png Graphic file (type png)
 
 <use BrowserCounter.png>
@@ -819,43 +819,43 @@ Cap\'{\i }tulo 2.
 [12
 
 ]
-Overfull \hbox (0.79626pt too wide) in paragraph at lines 104--105
+Overfull \hbox (0.79626pt too wide) in paragraph at lines 105--106
 []\OT1/ptm/m/n/12 O na-ve-ga-dor []e, tal-vez, o soft-ware mais am-pla-mente ut
 i-li-zado na hist[]oria e teve uma evolu[][]ao
  []
 
-[13] <web_basic.png, id=263, 462.72874pt x 169.63374pt>
+[13] <web_basic.png, id=268, 462.72874pt x 169.63374pt>
 File: web_basic.png Graphic file (type png)
  <use web_basic.png>
-Package pdftex.def Info: web_basic.png used on input line 143.
+Package pdftex.def Info: web_basic.png used on input line 144.
 (pdftex.def)             Requested size: 462.72762pt x 169.63332pt.
 
-Overfull \hbox (7.4835pt too wide) in paragraph at lines 143--144
+Overfull \hbox (7.4835pt too wide) in paragraph at lines 144--145
  [][] 
  []
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 151.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 152.
 
 (/usr/local/texlive/2012/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 152.
  [14 <./web_basic.png>] [15] [16]
 Cap\'{\i }tulo 3.
 [17
 
-] [18] <LossyLossLessExtended.png, id=304, 598.235pt x 529.98pt>
+] [18] <LossyLossLessExtended.png, id=309, 598.235pt x 529.98pt>
 File: LossyLossLessExtended.png Graphic file (type png)
 
 <use LossyLossLessExtended.png>
-Package pdftex.def Info: LossyLossLessExtended.png used on input line 214.
+Package pdftex.def Info: LossyLossLessExtended.png used on input line 215.
 (pdftex.def)             Requested size: 299.11676pt x 264.98933pt.
 
-<AlphaChunk.png, id=305, 593.21625pt x 133.49875pt>
+<AlphaChunk.png, id=310, 593.21625pt x 133.49875pt>
 File: AlphaChunk.png Graphic file (type png)
  <use AlphaChunk.png>
-Package pdftex.def Info: AlphaChunk.png used on input line 222.
+Package pdftex.def Info: AlphaChunk.png used on input line 223.
 (pdftex.def)             Requested size: 237.28229pt x 53.39854pt.
 
 [19 <./LossyLossLessExtended.png> <./AlphaChunk.png>] [20]
@@ -866,48 +866,48 @@ Cap\'{\i }tulo 4.
 Cap\'{\i }tulo 5.
 [23
 
-] <parte1.png, id=332, 934.49126pt x 339.2675pt>
+] <parte1.png, id=337, 934.49126pt x 339.2675pt>
 File: parte1.png Graphic file (type png)
  <use parte1.png>
-Package pdftex.def Info: parte1.png used on input line 331.
+Package pdftex.def Info: parte1.png used on input line 332.
 (pdftex.def)             Requested size: 467.24449pt x 169.63333pt.
 
-Overfull \hbox (12.00038pt too wide) in paragraph at lines 331--332
+Overfull \hbox (12.00038pt too wide) in paragraph at lines 332--333
  [][] 
  []
 
-[24 <./parte1.png>] <parte2.png, id=344, 930.47626pt x 343.2825pt>
+[24 <./parte1.png>] <parte2.png, id=349, 930.47626pt x 343.2825pt>
 File: parte2.png Graphic file (type png)
 
 <use parte2.png>
-Package pdftex.def Info: parte2.png used on input line 348.
+Package pdftex.def Info: parte2.png used on input line 349.
 (pdftex.def)             Requested size: 465.23698pt x 171.64082pt.
 
-Overfull \hbox (9.99287pt too wide) in paragraph at lines 348--349
+Overfull \hbox (9.99287pt too wide) in paragraph at lines 349--350
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 373--374
+Underfull \hbox (badness 10000) in paragraph at lines 374--375
 []\OT1/ptm/m/n/12 Ferramenta uti-li-zada para ge-ren-ci-a-mento das re-fer[]enc
 ias des-cri-tas na
  []
 
 
-Overfull \hbox (28.102pt too wide) in paragraph at lines 363--383
+Overfull \hbox (28.102pt too wide) in paragraph at lines 364--384
  [][] 
  []
 
 [25 <./parte2.png>]
-Overfull \hbox (5.58447pt too wide) in paragraph at lines 389--390
+Overfull \hbox (5.58447pt too wide) in paragraph at lines 390--391
 []\OT1/ptm/m/n/12 De uma ma-neira ge-ral, o n[]ucleo a ser al-te-rado para im-p
 le-men-tar a codifica[][]ao e decodifica[][]ao
  []
 
-<Arquitetura.png, id=356, 975.645pt x 406.51875pt>
+<Arquitetura.png, id=361, 975.645pt x 406.51875pt>
 File: Arquitetura.png Graphic file (type png)
  <use Arquitetura.png>
-Package pdftex.def Info: Arquitetura.png used on input line 393.
+Package pdftex.def Info: Arquitetura.png used on input line 394.
 (pdftex.def)             Requested size: 439.0362pt x 182.93173pt.
 
 [26 <./Arquitetura.png>] [27]
@@ -921,25 +921,25 @@ Cap\'{\i }tulo 6.
 | Comentario, sugestao ou critica sobre o abnTeX? Entre em contato: |
 |                  http://abntex.codigolivre.org.br                 |
 +-------------------------------------------------------------------+
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 407.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 408.
 [30]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 407.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 408.
  (./proposta.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 407.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 407.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 408.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 408.
 Package rerunfilecheck Info: File `proposta.out' has not changed.
-(rerunfilecheck)             Checksum: 69E7A853A803A63CA793E86CB7FC34B3;1816.
+(rerunfilecheck)             Checksum: A87C5C4F84824002F4D83D49AFC8EB7C;1907.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 407.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 408.
  ) 
 Here is how much of TeX's memory you used:
- 6895 strings out of 493488
- 104080 string characters out of 3141326
+ 6897 strings out of 493488
+ 104122 string characters out of 3141326
  197066 words of memory out of 3000000
- 9936 multiletter control sequences out of 15000+200000
+ 9937 multiletter control sequences out of 15000+200000
  32512 words of font info for 61 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
  30i,13n,41p,1242b,528s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -951,10 +951,10 @@ texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/local/texlive/2012/texmf-dis
 t/fonts/type1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/ty
 pe1/urw/times/utmr8a.pfb></usr/local/texlive/2012/texmf-dist/fonts/type1/urw/ti
 mes/utmri8a.pfb>
-Output written on proposta.pdf (31 pages, 379040 bytes).
+Output written on proposta.pdf (31 pages, 379838 bytes).
 PDF statistics:
- 442 PDF objects out of 1000 (max. 8388607)
- 386 compressed objects within 4 object streams
- 91 named destinations out of 1000 (max. 500000)
- 241 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 447 PDF objects out of 1000 (max. 8388607)
+ 391 compressed objects within 4 object streams
+ 92 named destinations out of 1000 (max. 500000)
+ 249 words of extra memory for PDF output out of 10000 (max. 10000000)
 
