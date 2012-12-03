@@ -199,8 +199,6 @@ O formato WebP foi disponibilizado em 2010 mas nunca conseguiu ser integrado ao 
 
 Pelo que se pode averiguar, parece que há por trás disso uma razão política na não adoção do formato WebP até o presente momento. Apesar do Google ter aumentado os investimentos no desenvolvimento do Mozilla Firefox em 2011, o Google Chrome vem tomando espaço do Firefox na internet e há um temor de que a própria existência do Firefox esteja ameaçada graças ao grande sucesso do navegador concorrente. Entretanto pelo que foi pesquisado dentro da comunidade há alguma chance de que caso uma boa implementação seja feita, ela poderá ser aceita dentro do código oficial.
 
-Nenhum trecho do \ingles{patch} enviado em 2010 através do \ingles{bug} aberto será aproveitado dentro deste trabalho, será necessário uma produção a partir do zero.
-
 \section{Especificação do Container WebP}
 
 Como um formato de imagem, o WebP utiliza um \ingles{container} RIFF (\ingles{Resource Interchange File Format}) para armazenamento das informações necessárias para utilização do formato dentro de um arquivo. O \ingles{container} do WebP também oferece como característica o suporte para a compressão \ingles{lossless} e o efeito de transparência que pode ser obtido através de um canal \ingles{alpha}. De forma geral o arquivo WebP é composto da imagem representada por uma matriz de \ingles{pixels} no formato VP8 e opcionalmente a informação em relação a transparência.
@@ -312,7 +310,7 @@ O aumento na capacidade de compressão do formato \ingles{WebP} trará de imedia
 
 Como o tempo para implementação do projeto é reduzido não haverá espaço para a reescrita de uma API nativa dentro do Firefox. O que será feito é a incorporação da biblioteca libwebp desenvolvida pelo Google dentro do Firefox e o trabalho efetivamente será a criação do decodificador e codificador integrado com as bibliotecas do próprio Firefox.
 
-No ano de 2010 um \ingles{patch} rudimentar foi escrito e submetido por um membro da comunidade, mas não foi aceito. Existem também algumas extensões que fazem com que o Firefox consiga exibir imagens WebP, porem estas extensões não caracterizam um desenvolvimento adequado visto que elas dependem de \ingles{plugins} adicionais. A proposta é que o navegador seja capaz de realizar a renderização nativamente.
+No ano de 2010 um \ingles{patch} rudimentar foi escrito e submetido por um membro da comunidade, mas não foi aceito. Existem também algumas extensões que fazem com que o Firefox consiga exibir imagens WebP, porem estas extensões não caracterizam um desenvolvimento adequado visto que elas dependem de \ingles{plugins} adicionais. A proposta é que o navegador seja capaz de realizar a renderização nativamente. Nenhum trecho do \ingles{patch} enviado em 2010 através do \ingles{bug} aberto será aproveitado dentro deste trabalho, será necessário uma produção a partir do zero.
 
 Pelo que se pode averiguar, parece que há por trás disso uma razão política na não adoção do formato WebP até o presente momento. Apesar do Google ter aumentado os investimentos no desenvolvimento do Mozilla Firefox em 2011, o Google Chrome vem tomando espaço do Firefox na internet e há um temor de que a própria existência do Firefox esteja ameaçada graças ao grande sucesso do navegador concorrente. Entretanto pelo que foi pesquisado dentro da comunidade há alguma chance de que caso uma boa implementação seja feita, ela poderá ser aceita dentro do código oficial.
 
