@@ -61,12 +61,12 @@ Os estudos mais recentes mostram que a capacidade de compressão do formato \ing
   \caption{Comparação do tamanho das imagens e porcentagem de compressão \protect\cite{WebPStudy}}
 \end{figure}
 
-Embora a implementação do suporte ao \ingles{WebP} esteja somente disponível para dois navegadores (Chrome e Opera), estes constituem mais de 29\% de todos os navegadores utilizados dentro da internet hoje. Se houvesse suporte ao \ingles{WebP} dentro do Mozilla Firefox este percentual aumentaria para 52\%, já que cerca de 22\% dos navegadores utilizados hoje são Mozilla Firefox \cite{BrowserStats}, como ilustra a Figura 1.2.
+Embora a implementação do suporte ao \ingles{WebP} esteja somente disponível para dois navegadores (Chrome e Opera), estes constituem mais de 29\% de todos os navegadores utilizados dentro da internet hoje. Se houvesse suporte ao \ingles{WebP} dentro do Mozilla Firefox este percentual aumentaria para 52\%, já que cerca de 22\% dos navegadores utilizados hoje são Mozilla Firefox \protect\cite{BrowserStats}, como ilustra a Figura 1.2.
 
 \begin{figure}[h]
   \centering
     \includegraphics[scale=0.5]{BrowserCounter.png}
-  \caption{Percentual de utilização dos Navegadores na Web \protect\cite{BrowserStats}}
+  \caption{Percentual de utilização dos Navegadores na Web \cite{BrowserStats}}
 \end{figure}
 
 Apesar de não existir nenhuma diretiva da W3C para qual método de compressão de imagens utilizar por padrão, e não se sabe se haverá tal tipo de registro neste sentido no futuro, é importante ressaltar que quanto mais navegadores suportarem a compressão usando o formato \ingles{WebP}, mais os desenvolvedores vão optar por utilizar este formato dada suas vantagens. Uma força de 52\% de suporte dentro dos navegadores da internet também fará com que aqueles que ainda não decidiram pela implementação do suporte ao novo formato, também o façam em virtude da pressão exercida pela maioria.
@@ -225,7 +225,7 @@ A diferença nos formatos simples com compressão \ingles{lossy} e \ingles{lossl
 
 \section{A API libwebp}
 
-A equipe de desenvolvimento do WebP mantém uma biblioteca chamada libwebp que oferece suporte para a criação de ferramentas para a manipulação do formato. No que tange a este trabalho serão utilizadas as bibliotecas para codificação e decodificação (encode.h e decode.h). Também será necessário utilizar a biblioteca que define os tipos básicos de variáveis e estruturas definidos pelo formato WebP (type.h).
+A equipe de desenvolvimento do WebP mantém uma biblioteca chamada libwebp que oferece suporte para a criação de ferramentas para a manipulação do formato. No que tange a este trabalho, serão utilizadas as bibliotecas para codificação e decodificação (encode.h e decode.h). Também será necessário utilizar a biblioteca que define os tipos básicos de variáveis e estruturas definidos pelo formato WebP (type.h).
 
 De acordo com a avaliação feita no código fonte e nas definições da biblioteca, as seguintes funções serão utilizadas para criação do decodificador:
 
@@ -255,7 +255,7 @@ A documentação da biblioteca libwebp é bem simples e direta mas oferece diver
 
 \chapter{Trabalhos Relacionados}
 
-Os seguintes trabalhos estão relacionados com o tema proposto:
+Neste capítulo são apresentadas alguns desenvolvimentos e projetos que se assemelham ao assunto deste trabalho, evidenciando soluções distintas e suas características.
 
 \begin{itemize}
 %	\item x264 Biblioteca para codificação e decodificação de imagem e áudio.
@@ -324,12 +324,29 @@ Visando atingir os objetivos descritos para este trabalho, foi criado o seguinte
 	\item Estudo da viabilidade de implementação;
 	\item Estudo do patch proposto em 2010;
 	\item Desenvolvimento da primeira parte da documentação para o trabalho final.
+\end{enumerate}	
+		
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.5]{parte1.png}
+  \caption{Cronograma de atividades da primeira parte.}
+\end{figure}
+
+Para a segunda parte (Trabalho de Conclusão 2) do desenvolvimento do projeto, foi feito um levantamento das tarefas com base nos estudos realizados e foram identificados as seguintes necessidades:
+\begin{enumerate}
+	\item Criação de um \ingles{fork} da última versão do projeto no repositório oficial.
+	\item \ingles{Merge} da biblioteca libwebp no código do Mozilla Firefox.
+	\item Criação do codificador e decodificador para o formato WebP.
+	\item Ajuste no inicializador e carregador das imagens do Mozilla Firefox.
+	\item Criação dos arquivos para compilação.
+	\item Teste da implementação e avaliação dos resultados
+	\item Desenvolvimento da segunda e última parte da documentação para o trabalho final.
 \end{enumerate}
 
 \begin{figure}[h]
   \centering
-    \includegraphics[scale=0.6]{scheduler.png}
-  \caption{Cronograma de atividades}
+    \includegraphics[scale=0.5]{parte2.png}
+  \caption{Cronograma de atividades da segunda parte.}
 \end{figure}
 
 O planejamento futuro para implementação vislumbra a criação de um \ingles{fork} a partir do projeto atual disponível na árvore oficial do Firefox. O trabalho então será feito em cima deste projeto separado para evitar que as atualizações constantes dos mantenedores atrapalhe o desenvolvimento que será realizado.

@@ -22,5 +22,5 @@
 \contentsline {section}{\numberline {5.2}Projeto}{24}{section.abstract.5.2}
 \contentsline {section}{\numberline {5.3}Ambiente de Desenvolvimento}{25}{section.abstract.5.3}
 \contentsline {section}{\numberline {5.4}Modelagem e Arquitetura}{25}{section.abstract.5.4}
-\contentsline {chapter}{\numberline {6}Coment\IeC {\'a}rios Finais}{27}{chapter.abstract.6}
-\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{28}{chapter.abstract.6}
+\contentsline {chapter}{\numberline {6}Coment\IeC {\'a}rios Finais}{28}{chapter.abstract.6}
+\contentsline {chapter}{Refer\^encias Bibliogr\'aficas}{29}{chapter.abstract.6}

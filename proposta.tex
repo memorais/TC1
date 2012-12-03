@@ -30,7 +30,7 @@
 \newcommand{\bibTeX}{bib\kern-.13ex\TeX}
 
 \begin{resumo}
-Este trabalho tem como objetivo embasar o desenvolvimento do suporte à codificação e decodificação do formato de imagem WebP dentro do navegador Mozilla Firefox. O texto descrito aqui se divide basicamente em quatro partes principais onde a primeira é uma introdução e contextualização do cenário atual, a fundamentação teórica para o projeto, um detalhamento do formato WebP e finalmente a proposta para execução do trabalho. Ao final existem considerações finais a respeito das dificuldades encontradas durante a elaboração deste documento.
+Este trabalho tem como objetivo embasar o desenvolvimento do suporte à codificação e decodificação do formato de imagem WebP dentro do navegador Mozilla Firefox. O texto descrito aqui se divide basicamente em quatro partes principais, onde a primeira é uma introdução e contextualização do cenário atual, a fundamentação teórica para o projeto, um detalhamento do formato WebP e finalmente a proposta para execução do trabalho. No final existem considerações relevantes à respeito das dificuldades encontradas durante a elaboração deste documento.
 \end{resumo}
 
 \begin{abstract}
@@ -43,7 +43,7 @@ This paper work have as it main target to base the development of the support to
 
 \section{Contextualização}
 
-Uma tecnologia importante da comunicação utilizada nos dias de hoje dentro da internet é a chamada WWW, ou \ingles{World Wide Web} onde usuários acessam páginas da \ingles{Web} escritas em uma linguagem específica definida por uma organização internacional (W3C), que é renderizada através de um software chamado de navegador. O usuário então pode ler as informações descritas ali e acessar os demais conteúdos da página através de seus hiperlinks de uma maneira fácil e intuitiva.
+Uma tecnologia importante da comunicação utilizada nos dias de hoje dentro da internet é a chamada WWW, ou \ingles{World Wide Web} onde usuários acessam páginas da \ingles{Web} escritas em uma linguagem específica definida por uma organização internacional (W3C), que é renderizada através de um software chamado de navegador. O usuário então pode ler as informações descritas ali, e acessar os demais conteúdos da página através de seus hiperlinks de uma maneira fácil e intuitiva.
 
 Com a crescente evolução dos meios de comunicação, a necessidade de total interatividade do usuário com as páginas aumenta cada vez mais. Uma página da \ingles{Web} não é somente texto como era nos primórdios, ela é composta de uma série de diferentes atores como folhas de estilo, imagens e vídeos. Estes atores existem para aumentar a facilidade no uso e causar uma experiência mais agradável para o usuário final.
 
@@ -79,6 +79,8 @@ Com o objetivo de aumentar a disseminação do novo formato dentro da \ingles{We
 
 O objetivo deste trabalho não visa a aceitação por parte da equipe do Mozilla, em integrar a implementação desenvolvida ao código fonte do repositório oficial do Firefox. O objetivo é somente contribuir no desenvolvimento para que a renderização nativa do formato WebP seja implementada dentro do navegador. O trabalho desenvolvido poderá ser entregue à comunidade do Firefox, mas sua aplicação oficial na árvore da Mozilla não é o alvo principal. A proposta é a inclusão do suporte à codificação e decodificação do formato de imagem \ingles{WebP} no navegador Mozilla Firefox.
 
+\section{Organização do Texto}
+Este trabalho está estruturado em seis capítulos. O primeiro apresenta uma introdução sobre o assunto, bem como a motivação e os objetivos deste trabalho. Já no capítulo 2, a fundamentação teória está exposta apresentando as tecnologias que possuem ligação direta com a proposta do trabalho. Alguns trabalhos relacionados ao assunto estão apresentados no quarto capítulo. E por último, é descrita a solução proposta e os comentários ﬁnais, nos capítulos 5 e 6, respectivamente.
 
 \chapter{Fundamentação Teórica}
 
@@ -324,18 +326,29 @@ Visando atingir os objetivos descritos para este trabalho, foi criado o seguinte
 	\item Estudo da viabilidade de implementação;
 	\item Estudo do patch proposto em 2010;
 	\item Desenvolvimento da primeira parte da documentação para o trabalho final.
+\end{enumerate}	
+		
+\begin{figure}[h]
+  \centering
+    \includegraphics[scale=0.5]{parte1.png}
+  \caption{Cronograma de atividades da primeira parte.}
+\end{figure}
+
+Para a segunda parte (Trabalho de Conclusão 2) do desenvolvimento do projeto, foi feito um levantamento das tarefas com base nos estudos realizados e foram identificados as seguintes necessidades:
+\begin{enumerate}
 	\item Criação de um \ingles{fork} da última versão do projeto no repositório oficial.
 	\item \ingles{Merge} da biblioteca libwebp no código do Mozilla Firefox.
 	\item Criação do codificador e decodificador para o formato WebP.
 	\item Ajuste no inicializador e carregador das imagens do Mozilla Firefox.
 	\item Criação dos arquivos para compilação.
+	\item Teste da implementação e avaliação dos resultados
 	\item Desenvolvimento da segunda e última parte da documentação para o trabalho final.
 \end{enumerate}
 
 \begin{figure}[h]
   \centering
-    \includegraphics[scale=0.6]{scheduler.png}
-  \caption{Cronograma de atividades}
+    \includegraphics[scale=0.5]{parte2.png}
+  \caption{Cronograma de atividades da segunda parte.}
 \end{figure}
 
 O planejamento futuro para implementação vislumbra a criação de um \ingles{fork} a partir do projeto atual disponível na árvore oficial do Firefox. O trabalho então será feito em cima deste projeto separado para evitar que as atualizações constantes dos mantenedores atrapalhe o desenvolvimento que será realizado.
